@@ -4,22 +4,32 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+//data model
+import { ModelModule } from './model/model.module';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { SelectCharPage } from '../pages/select-char/select-char';
+import { GamePage } from '../pages/game/game';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SelectCharPage,
+    GamePage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ModelModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    SelectCharPage,
+    GamePage,
   ],
   providers: [
     StatusBar,

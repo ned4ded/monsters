@@ -1,0 +1,10 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>List of monsters</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+  <button ion-item *ngFor="let monster of getMonsters()" (click)="beginGame(monster)">
+    {{monster.name}}
+  </button>
+</ion-content>
