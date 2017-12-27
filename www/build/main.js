@@ -258,7 +258,7 @@ var SelectCharPage = (function () {
     };
     SelectCharPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header>\n<ion-content class="container">\n  <ul class="list">\n    <li class="item Monsters__{{monster.name}}-bgc" *ngFor="let monster of getMonsters()" (click)="beginGame(monster)">\n      <img src="/assets/imgs/Monsters/{{monster.name}}.svg" alt="placholder" class="Monsters Monsters__{{monster.name}}">\n    </li>\n  </ul>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
+            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header>\n<ion-content class="container">\n  <ul class="list">\n    <li class="item Monsters__{{monster.name}}-bgc" *ngFor="let monster of getMonsters()" (click)="beginGame(monster)">\n      <img src="assets/imgs/Monsters/{{monster.name}}.svg" alt="placholder" class="Monsters Monsters__{{monster.name}}">\n    </li>\n  </ul>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]])
