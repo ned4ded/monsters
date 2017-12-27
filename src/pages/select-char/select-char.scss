@@ -1,5 +1,9 @@
 select-char-page {
   .container {
+    background-color: $primary-light-color;
+  }
+
+  .list {
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -8,6 +12,7 @@ select-char-page {
   }
 
   .item {
+    position: relative;
     width: 50%;
     height: 300px;
     border: 10px solid $primary-light-color;

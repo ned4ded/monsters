@@ -1,16 +1,32 @@
 <ion-content>
-  <button ion-button icon-only outline color="dark" class="btn-close" (click)="endGame()">
-        <ion-icon name="close" class="icon-close"></ion-icon>
-  </button>
-  <div class="screen">
-    <span class="placeholder-name">
-      {{monster.name}}
-    </span>
-    <span class="placeholder-id">
-      {{monster.id}}
-    </span>
-  </div>
-  <div class="panel">
+  <div class="container">
+    <div class="screen Monsters__{{monster.name}}-big">
+      <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">
+            <ion-icon name="close" class="icon-close"></ion-icon>
+      </button>
+    </div>
+    <div class="panel-container">
+      <ul class="panel">
+        <li *ngFor="let item of getItems()" class="panel__item">
+          <div class="draggable-element">
+            <img
+            src="assets/imgs/GameItems/{{item.name}}.svg"
+            alt="image of {{item.name}}"
+            class="GameItem
+                  {{item.vertical? 'GameItem--vertical' : ''}}
+                  GameItem__{{item.name}}">
 
+            <img
+            *ngIf="item.doubled"
+            src="assets/imgs/GameItems/{{item.name}}.svg"
+            alt="image of {{item.name}}"
+            class="GameItem
+                  {{item.vertical? 'GameItem--vertical' : ''}}
+                  GameItem__{{item.name}}">
+
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </ion-content>

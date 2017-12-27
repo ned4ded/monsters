@@ -1,0 +1,52 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 264.16 354.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+      .cls-2,
+      .cls-5 {
+        fill: #fff;
+      }
+      .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+      .cls-3 {
+        clip-path: url("#clip-path");
+      }
+      .cls-4 {
+        fill: #231300;
+      }
+      .cls-6 {
+        clip-path: url("#clip-path-2");
+      }
+      .cls-7 {
+        fill: #b7e3ee;
+      }
+      .cls-8 {
+        clip-path: url("#clip-path-3");
+      }
+      .cls-9 {
+        fill: #f24943;
+      }
+      .cls-10 {
+        clip-path: url("#clip-path-5");
+      }
+      .cls-11 {
+        fill: #cdcdcd;
+      }
+    </style>
+    <clipPath id="clip-path"><rect class="cls-1" x="6.9" y="-479.04" width="258.33" height="356.91"/></clipPath>
+    <clipPath id="clip-path-2"><rect class="cls-1" x="5.83" y="23.69" width="258.33" height="330.47"/></clipPath>
+    <clipPath id="clip-path-3"><ellipse class="cls-1" cx="133.99" cy="181.17" rx="28.28" ry="61.84"/></clipPath>
+    <clipPath id="clip-path-5"><rect class="cls-1" x="-394.98" y="7.85" width="264.56" height="346.53"/></clipPath>
+  </defs>
+  <g class="cls-3"><rect class="cls-4" x="72.44" y="137.09" width="35.69" height="299.31"/><rect class="cls-4" x="157.68" y="137.09" width="35.69" height="299.31"/><path class="cls-5" d="M207-129a75.32,75.32,0,0,0-75.1-75.1h0A75.32,75.32,0,0,0,56.83-129V300.34H207Z"/></g>
+  <g class="cls-6"><path
+    class="cls-7"
+    d="M134,28.4C61.71,28.4,3.12,251.1,3.12,525.81q0,5.15,0,10.26c.32,0,.62.07.95.07,21.75,0,21.75-48.95,43.49-48.95s21.75,48.95,43.5,48.95,21.75-48.95,43.5-48.95,21.75,48.95,43.51,48.95,21.75-48.95,43.51-48.95,21.76,48.49,43.22,48.93q0-5.14,0-10.31C264.86,251.1,206.27,28.4,134,28.4Z"/><path d="M115.42,104.72A10.75,10.75,0,1,1,126.17,94,10.76,10.76,0,0,1,115.42,104.72Z"/><path class="cls-5" d="M115.42,87a7,7,0,1,1-7,7,7,7,0,0,1,7-7m0-7.52A14.51,14.51,0,1,0,129.93,94a14.51,14.51,0,0,0-14.51-14.51Z"/><path d="M152.56,104.72A10.75,10.75,0,1,1,163.31,94,10.76,10.76,0,0,1,152.56,104.72Z"/><path class="cls-5" d="M152.56,87a7,7,0,1,1-7,7,7,7,0,0,1,7-7m0-7.52A14.51,14.51,0,1,0,167.07,94a14.51,14.51,0,0,0-14.51-14.51Z"/><ellipse class="cls-4" cx="133.99" cy="181.17" rx="28.28" ry="61.84"/>
+    <g class="cls-8"><path class="cls-9" d="M165.16,164.84a12,12,0,1,0-21.21,7.7l.21.29a10.68,10.68,0,0,1,1.52,5.86,12,12,0,1,1-24,0,11.48,11.48,0,0,1,2.06-6.56l.22-.29a12,12,0,1,0-21.76-7s-3.78-10.58-.42-13.94,17-33.47,17-33.47l28-3.89L159.2,146l8.39,9.07Z"/></g>
+    <g class="cls-8"><rect class="cls-5" x="124.57" y="117.12" width="8.23" height="16.72"/><rect class="cls-5" x="135.19" y="117.12" width="8.23" height="16.72"/></g>
+  </g>
+</svg>

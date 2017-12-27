@@ -9,7 +9,7 @@ export class MonsterRepository {
   constructor(private src: StaticDataSource) {
     src.getMonsters().subscribe(data => {
       this.monsters = data;
-    })
+    });
   }
 
   getMonsters() : Monster[] {

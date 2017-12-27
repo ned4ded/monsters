@@ -25739,14 +25739,41 @@ body {
   }
 }
 
+.GameItem {
+  width: 100px;
+}
+
+.GameItem--vertical {
+  width: auto;
+  height: 60px;
+}
+
+.GameItem__lips {
+  width: 60px;
+}
+
 game-page {
   overflow: hidden;
 }
 
+game-page .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 100%;
+}
+
 game-page .btn-close {
   position: absolute;
-  top: 25px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   width: 40px;
   height: 40px;
   padding: 10px;
@@ -25755,16 +25782,17 @@ game-page .btn-close {
 
 game-page .icon-close {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 10px;
+  left: 0;
 }
 
 game-page .screen {
+  position: relative;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
   width: 100%;
-  height: 475px;
-  background-color: lightgrey;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25806,9 +25834,30 @@ game-page .placeholder-id:before {
 }
 
 game-page .panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  height: 150px;
-  background-color: dimgrey;
+  height: 200px;
+  background-color: #38687a;
+  border-bottom: 25px solid #003d4e;
+  border-top: 1px solid #001826;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+game-page .panel__item {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0 10px;
 }
 
 page-home .container {
@@ -25847,7 +25896,98 @@ page-home .logo {
   transform: translateX(-50%);
 }
 
+.Monsters {
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.Monsters__mummy {
+  height: 85.21043px;
+}
+
+.Monsters__mummy-bgc {
+  background-color: #3f2721;
+}
+
+.Monsters__mummy-big {
+  background: #3f2721 url("../assets/imgs/Monsters/mummy-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.Monsters__vampire {
+  height: 93.56535px;
+}
+
+.Monsters__vampire-bgc {
+  background-color: #3b457e;
+}
+
+.Monsters__vampire-big {
+  background: #3b457e url("../assets/imgs/Monsters/vampire-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.Monsters__spider {
+  height: 44.47802px;
+}
+
+.Monsters__spider-bgc {
+  background-color: #f1ea35;
+}
+
+.Monsters__spider-big {
+  background: #f1ea35 url("../assets/imgs/Monsters/spider-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.Monsters__ghost {
+  height: 85.0968px;
+}
+
+.Monsters__ghost-bgc {
+  background-color: black;
+}
+
+.Monsters__ghost-big {
+  background: black url("../assets/imgs/Monsters/ghost-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.Monsters__skeleton {
+  height: 94.46381px;
+}
+
+.Monsters__skeleton-bgc {
+  background-color: black;
+}
+
+.Monsters__skeleton-big {
+  background: black url("../assets/imgs/Monsters/skeleton-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.Monsters__alien {
+  height: 92.62874px;
+}
+
+.Monsters__alien-bgc {
+  background-color: black;
+}
+
+.Monsters__alien-big {
+  background: black url("../assets/imgs/Monsters/alian-big.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
 select-char-page .container {
+  background-color: #38687a;
+}
+
+select-char-page .list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25863,6 +26003,7 @@ select-char-page .container {
 }
 
 select-char-page .item {
+  position: relative;
   width: 50%;
   height: 300px;
   border: 10px solid #38687a;
