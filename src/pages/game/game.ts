@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Monster } from '../../app/model/monster.model';
+import { MonsterRepository } from '../../app/model/monster.repository';
 import { GameItem } from '../../app/model/game-item.model';
 import { GameItemRepository } from '../../app/model/game-item.repository';
 
@@ -15,10 +16,11 @@ export class GamePage {
   constructor(
     public navCtrl: NavController,
     public params: NavParams,
-    private repo: GameItemRepository
+    private gameItemRepo: GameItemRepository,
+    private monsterRepo: MonsterRepository,
   ) {
     this.monster = params.get('monster');
-    this.items = repo.getItems();
+    this.items = gameItemRepo.getItems();
   }
 
   endGame() {
@@ -38,5 +40,10 @@ export class GamePage {
       default:
         break;
     }
+  }
+
+  getMonsterViewBox() : string {
+    const viewBox = this.monsterRepo.getViewBox(this.monster.id);
+    return viewBox.slice().join(' ');
   }
 }

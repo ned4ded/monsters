@@ -10,12 +10,12 @@ import { GameItem } from "./game-item.model";
 export class StaticDataSource {
 
   private monsters: Monster[] = [
-    new Monster(1, 'mummy', 176.358, 200.968, [63, 39, 33]),
-    new Monster(2, 'vampire', 92.279, 220.673, [59, 69, 126] ),
-    new Monster(3, 'spider', 129.091, 104.901, [241, 234, 53]),
-    new Monster(4, 'ghost', 103.461, 200.7, [0, 0, 0]),
-    new Monster(5, 'skeleton', 173.034, 222.792, [0, 0, 0]),
-    new Monster(6, 'alien', 56.551, 218.464, [0, 0, 0]),
+    new Monster(1, 'mummy', 176.358, 200.968, [0, 0, 0, 0], [63, 39, 33]),
+    new Monster(2, 'vampire', 92.279, 220.673, [0, 0, 0, 0], [59, 69, 126] ),
+    new Monster(3, 'spider', 129.091, 104.901, [0, 0, 0, 0], [241, 234, 53]),
+    new Monster(4, 'ghost', 103.461, 200.7, [0, 0, 0, 0], [0, 0, 0]),
+    new Monster(5, 'skeleton', 173.034, 222.792, [0, 0, 0, 0], [0, 0, 0]),
+    new Monster(6, 'alien', 56.551, 218.464, [0, 0, 165.37, 302.36], [0, 0, 0]),
   ];
 
   private gameItems: GameItem[] = [

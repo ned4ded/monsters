@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { ModelModule } from './model/model.module';
 
 import { MyApp } from './app.component';
+import { MonsterSprite } from '../pages/monster-sprite/monster-sprite';
 import { HomePage } from '../pages/home/home';
 import { SelectCharPage } from '../pages/select-char/select-char';
 import { GamePage } from '../pages/game/game';
@@ -15,6 +16,7 @@ import { GamePage } from '../pages/game/game';
 @NgModule({
   declarations: [
     MyApp,
+    MonsterSprite,
     HomePage,
     SelectCharPage,
     GamePage,
@@ -27,6 +29,7 @@ import { GamePage } from '../pages/game/game';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    MonsterSprite,
     HomePage,
     SelectCharPage,
     GamePage,

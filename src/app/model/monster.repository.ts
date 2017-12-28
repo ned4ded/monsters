@@ -19,4 +19,8 @@ export class MonsterRepository {
   getMonster(id : number) : Monster {
     return this.monsters.find(m => m.id == id);
   }
+
+  getViewBox(monsterId : number) : [number, number, number, number] {
+    return this.getMonster(monsterId).viewBox;
+  }
 }

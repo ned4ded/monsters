@@ -1,6 +1,9 @@
 <ion-content>
   <div class="container">
-    <div class="screen Monsters__{{monster.name}}-big">
+    <div class="screen">
+        <svg attr.viewBox="{{getMonsterViewBox()}}" width="80%" height="80%">
+          <use attr.xlink:href="assets/monsters-sprite.svg#{{monster.name}}--short"></use>
+        </svg>
       <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">
             <ion-icon name="close" class="icon-close"></ion-icon>
       </button>
