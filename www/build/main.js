@@ -681,27 +681,41 @@ var MonsterConstructor = (function (_super) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvgConstructor; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_builder__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_build__ = __webpack_require__(291);
 
 var SvgConstructor = (function () {
     function SvgConstructor(_a) {
         var meta = _a.meta, figure = _a.figure;
-        this.root = new __WEBPACK_IMPORTED_MODULE_0__node_builder__["a" /* NodeBuilder */](meta, [], 'svg');
-        this.root.children = [this.parse(figure)];
+        this.root = Object(__WEBPACK_IMPORTED_MODULE_0__node_build__["a" /* default */])(meta);
+        this.content = Object(__WEBPACK_IMPORTED_MODULE_0__node_build__["a" /* default */])(figure);
     }
-    SvgConstructor.prototype.parse = function (obj) {
-        var _this = this;
-        return new __WEBPACK_IMPORTED_MODULE_0__node_builder__["a" /* NodeBuilder */](obj.getMeta(), obj.getParts().map(function (obj) { return _this.parse(obj); }), 'svg');
-    };
     SvgConstructor.prototype.build = function (targetName) {
         var target = document.getElementById(targetName || 'nb-target');
-        var svg = this.root.build();
-        target.appendChild(svg);
+        this.root.appendChild(this.content);
+        target.appendChild(this.root);
     };
     return SvgConstructor;
 }());
 
 //# sourceMappingURL=svg-constructor.js.map
+
+/***/ }),
+
+/***/ 291:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_builder__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_model__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__figure_model__ = __webpack_require__(204);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function (el) {
+    var newFigure = el instanceof __WEBPACK_IMPORTED_MODULE_1__node_model__["a" /* Node */] ? new __WEBPACK_IMPORTED_MODULE_2__figure_model__["a" /* FigureModel */](el, []) : el;
+    return new __WEBPACK_IMPORTED_MODULE_0__node_builder__["a" /* NodeBuilder */](newFigure).build();
+});;
+//# sourceMappingURL=node-build.js.map
 
 /***/ }),
 
@@ -711,18 +725,19 @@ var SvgConstructor = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NodeBuilder; });
 var NodeBuilder = (function () {
-    function NodeBuilder(node, children, tagNS) {
+    function NodeBuilder(figure, tagNS) {
         this.tagNamespaces = new Map([
             ['svg', 'http://www.w3.org/2000/svg'],
             ['html', 'http://www.w3.org/1999/xhtml']
         ]);
-        this.node = node;
-        this.children = children;
-        this.tagNS = this.tagNamespaces.get(tagNS);
+        this.attr = figure.getAttributes();
+        this.type = figure.getType();
+        this.children = figure.getParts();
+        this.tagNS = this.tagNamespaces.get(tagNS || 'svg');
     }
     NodeBuilder.prototype.build = function () {
-        var tag = document.createElementNS(this.tagNS, this.node.getType());
-        var attr = this.node.getAttributes();
+        var tag = document.createElementNS(this.tagNS, this.type);
+        var attr = this.attr;
         Object.keys(attr)
             .filter(function (key) { return attr[key]; })
             .forEach(function (key) { return tag.setAttribute(key, attr[key]); });
@@ -730,7 +745,7 @@ var NodeBuilder = (function () {
             return tag;
         }
         var children = this.children.map(function (ch) {
-            return ch.build();
+            return new NodeBuilder(ch).build();
         });
         children.forEach(function (ch) { return tag.appendChild(ch); });
         return tag;

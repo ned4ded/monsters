@@ -1,27 +1,17 @@
-import { NodeBuilder } from './node-builder';
-import { Node } from './node.model';
-import { FigureModel } from './figure.model';
+import buildNode from './node-build';
 
 export class SvgConstructor {
-  protected root: NodeBuilder;
+  protected root: Element;
+  protected content: Element;
 
-  constructor({ meta, figure } : {meta: Node, figure: FigureModel}) {
-    this.root = new NodeBuilder(meta, [], 'svg');
-
-    this.root.children = [this.parse(figure)];
-  }
-
-  private parse(obj: FigureModel): NodeBuilder {
-    return new NodeBuilder(
-      obj.getMeta(),
-      obj.getParts().map(obj => this.parse(obj)),
-      'svg',
-    );
+  constructor({ meta, figure }) {
+    this.root = buildNode(meta);
+    this.content = buildNode(figure);
   }
 
   public build(targetName?: string): void {
     const target = document.getElementById(targetName || 'nb-target');
-    const svg = this.root.build();
-    target.appendChild(svg);
+    this.root.appendChild(this.content);
+    target.appendChild(this.root);
   }
 }
