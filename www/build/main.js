@@ -8,10 +8,13 @@ webpackJsonp([0],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monster_model__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_model__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monster_model__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_model__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_builder_monster_constructor__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__svg_builder_root_node_model__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__svg_builder_svg_sprite_monsters_exports__ = __webpack_require__(291);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -23,6 +26,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 // Entities
 
+
+
+
+// DataShorties
 
 var StaticDataSource = (function () {
     function StaticDataSource() {
@@ -42,9 +49,29 @@ var StaticDataSource = (function () {
             new __WEBPACK_IMPORTED_MODULE_4__game_item_model__["a" /* GameItem */](5, 'lips', 98.471, 69.73),
             new __WEBPACK_IMPORTED_MODULE_4__game_item_model__["a" /* GameItem */](6, 'love-glasses', 296.347, 103.926),
         ];
+        this.newMonsters = [
+            new __WEBPACK_IMPORTED_MODULE_5__svg_builder_monster_constructor__["a" /* MonsterConstructor */]({
+                meta: new __WEBPACK_IMPORTED_MODULE_6__svg_builder_root_node_model__["a" /* RootNode */]({
+                    name: 'svg-container',
+                    tagType: 'svg',
+                    customAttr: {
+                        'xmlns': 'http://www.w3.org/2000/svg',
+                        'xmlns:xlink': 'http://www.w3.org/1999/xlink'
+                    },
+                    viewBox: [0, 0, 165.37, 302.36],
+                    width: '80%',
+                    height: '80%',
+                    initialScreenWidth: 150,
+                }),
+                figure: __WEBPACK_IMPORTED_MODULE_7__svg_builder_svg_sprite_monsters_exports__["a" /* alienTorso */]
+            }),
+        ];
     }
     StaticDataSource.prototype.getMonsters = function () {
         return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].from([this.monsters]);
+    };
+    StaticDataSource.prototype.getNewMonsters = function () {
+        return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].from([this.newMonsters]);
     };
     StaticDataSource.prototype.getItems = function () {
         return __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].from([this.gameItems]);
@@ -83,12 +110,19 @@ var MonsterRepository = (function () {
         var _this = this;
         this.src = src;
         this.monsters = [];
+        this.newMonsters = [];
         src.getMonsters().subscribe(function (data) {
             _this.monsters = data;
+        });
+        src.getNewMonsters().subscribe(function (data) {
+            _this.newMonsters = data;
         });
     }
     MonsterRepository.prototype.getMonsters = function () {
         return this.monsters;
+    };
+    MonsterRepository.prototype.getNewMonsters = function () {
+        return this.newMonsters;
     };
     MonsterRepository.prototype.getMonster = function (id) {
         return this.monsters.find(function (m) { return m.id == id; });
@@ -145,6 +179,40 @@ webpackEmptyAsyncContext.id = 158;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Node; });
+var Node = (function () {
+    function Node(meta) {
+        this.name = meta.name;
+        this.mod = meta.mod || null;
+        this.tagType = meta.tagType;
+        this.class = meta.class || null;
+        this.customAttr = meta.customAttr || null;
+    }
+    Node.prototype.getAttributes = function () {
+        var modified = this.mod ? this.name + "--" + this.mod : null;
+        var obj = {
+            class: [this.name, modified, this.class].filter(function (n) { return n; }).join(' '),
+        };
+        var newObj = Object.assign(obj, this.customAttr);
+        return newObj;
+    };
+    Node.prototype.getName = function () {
+        return this.name;
+    };
+    Node.prototype.getType = function () {
+        return this.tagType;
+    };
+    return Node;
+}());
+
+//# sourceMappingURL=node.model.js.map
+
+/***/ }),
+
+/***/ 203:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameItemRepository; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_datasource__ = __webpack_require__(103);
@@ -169,7 +237,6 @@ var GameItemRepository = (function () {
         });
     }
     GameItemRepository.prototype.getItems = function () {
-        console.log(this.items);
         return this.items;
     };
     GameItemRepository.prototype.getItem = function (id) {
@@ -186,14 +253,14 @@ var GameItemRepository = (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_char_select_char__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_char_select_char__ = __webpack_require__(205);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -226,7 +293,7 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -234,7 +301,7 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -256,12 +323,13 @@ var SelectCharPage = (function () {
     SelectCharPage.prototype.getMonsters = function () {
         return this.repo.getMonsters();
     };
-    SelectCharPage.prototype.beginGame = function (monster) {
+    SelectCharPage.prototype.beginGame = function () {
+        var monster = this.repo.getNewMonsters()[0];
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__game_game__["a" /* GamePage */], { monster: monster });
     };
     SelectCharPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header>\n<ion-content class="container">\n  <ul class="list">\n    <li class="item Monsters__{{monster.name}}-bgc" *ngFor="let monster of getMonsters()" (click)="beginGame(monster)">\n      <img src="assets/imgs/Monsters/{{monster.name}}.svg" alt="placholder" class="Monsters Monsters__{{monster.name}}">\n    </li>\n  </ul>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
+            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header>\n<ion-content class="container">\n  <ul class="list">\n    <li class="item Monsters__{{monster.name}}-bgc" *ngFor="let monster of getMonsters()" (click)="beginGame()">\n      <img src="assets/imgs/Monsters/{{monster.name}}.svg" alt="placholder" class="Monsters Monsters__{{monster.name}}">\n    </li>\n  </ul>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]])
@@ -273,7 +341,7 @@ var SelectCharPage = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -281,7 +349,7 @@ var SelectCharPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_game_item_repository__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_game_item_repository__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -304,11 +372,17 @@ var GamePage = (function () {
         this.monster = params.get('monster');
         this.items = gameItemRepo.getItems();
     }
+    GamePage.prototype.ngOnInit = function () {
+        this.buildMonster();
+    };
     GamePage.prototype.endGame = function () {
         this.navCtrl.pop();
     };
     GamePage.prototype.getItems = function () {
         return this.items;
+    };
+    GamePage.prototype.buildMonster = function () {
+        this.monster.build();
     };
     GamePage.prototype.getCorrelationalSize = function (item, side, value) {
         switch (side) {
@@ -320,13 +394,9 @@ var GamePage = (function () {
                 break;
         }
     };
-    GamePage.prototype.getMonsterViewBox = function () {
-        var viewBox = this.monsterRepo.getViewBox(this.monster.id);
-        return viewBox.slice().join(' ');
-    };
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content>\n  <div class="container">\n    <div class="screen">\n        <svg attr.viewBox="{{getMonsterViewBox()}}" width="80%" height="80%">\n          <use attr.xlink:href="assets/monsters-sprite.svg#{{monster.name}}--short"></use>\n        </svg>\n      <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">\n            <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n    </div>\n    <div class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item">\n          <div class="draggable-element">\n            <img\n            src="assets/imgs/GameItems/{{item.name}}.svg"\n            alt="image of {{item.name}}"\n            class="GameItem\n                  {{item.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.name}}">\n\n            <img\n            *ngIf="item.doubled"\n            src="assets/imgs/GameItems/{{item.name}}.svg"\n            alt="image of {{item.name}}"\n            class="GameItem\n                  {{item.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.name}}">\n\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
+            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content>\n  <div class="container">\n    <div id="nb-target" class="screen">\n      <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n    </div>\n    <div class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item">\n          <div class="draggable-element">\n            <img\n            src="assets/imgs/GameItems/{{item.name}}.svg"\n            alt="image of {{item.name}}"\n            class="GameItem\n                  {{item.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.name}}">\n\n            <img\n            *ngIf="item.doubled"\n            src="assets/imgs/GameItems/{{item.name}}.svg"\n            alt="image of {{item.name}}"\n            class="GameItem\n                  {{item.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.name}}">\n\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
@@ -340,13 +410,13 @@ var GamePage = (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(226);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -354,7 +424,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 225:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -364,12 +434,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__model_model_module__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_monster_sprite_sprite_directive__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_game_game__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__model_model_module__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_monster_sprite_sprite_directive__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_game_game__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -429,16 +499,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_datasource__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monster_repository__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_repository__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_repository__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -467,7 +537,7 @@ var ModelModule = (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 285:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -489,7 +559,7 @@ var Monster = (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -515,7 +585,208 @@ var GameItem = (function () {
 
 /***/ }),
 
-/***/ 286:
+/***/ 287:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterConstructor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor__ = __webpack_require__(288);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var MonsterConstructor = (function (_super) {
+    __extends(MonsterConstructor, _super);
+    function MonsterConstructor(_a) {
+        var meta = _a.meta, figure = _a.figure;
+        return _super.call(this, { meta: meta, figure: figure }) || this;
+    }
+    return MonsterConstructor;
+}(__WEBPACK_IMPORTED_MODULE_0__svg_constructor__["a" /* SvgConstructor */]));
+
+//# sourceMappingURL=monster-constructor.js.map
+
+/***/ }),
+
+/***/ 288:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvgConstructor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_builder__ = __webpack_require__(289);
+
+var SvgConstructor = (function () {
+    function SvgConstructor(_a) {
+        var meta = _a.meta, figure = _a.figure;
+        this.root = new __WEBPACK_IMPORTED_MODULE_0__node_builder__["a" /* NodeBuilder */](meta, [], 'svg');
+        this.root.children = [this.parse(figure)];
+    }
+    SvgConstructor.prototype.parse = function (obj) {
+        var _this = this;
+        return new __WEBPACK_IMPORTED_MODULE_0__node_builder__["a" /* NodeBuilder */](obj.getMeta(), obj.getParts().map(function (obj) { return _this.parse(obj); }), 'svg');
+    };
+    SvgConstructor.prototype.build = function (targetName) {
+        var target = document.getElementById(targetName || 'nb-target');
+        var svg = this.root.build();
+        target.appendChild(svg);
+    };
+    return SvgConstructor;
+}());
+
+//# sourceMappingURL=svg-constructor.js.map
+
+/***/ }),
+
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NodeBuilder; });
+var NodeBuilder = (function () {
+    function NodeBuilder(node, children, tagNS) {
+        this.tagNamespaces = new Map([
+            ['svg', 'http://www.w3.org/2000/svg'],
+            ['html', 'http://www.w3.org/1999/xhtml']
+        ]);
+        this.node = node;
+        this.children = children;
+        this.tagNS = this.tagNamespaces.get(tagNS);
+    }
+    NodeBuilder.prototype.getChildren = function () {
+        return this.children;
+    };
+    NodeBuilder.prototype.getChild = function (fn) {
+        var children = this.children.slice();
+        if (children.length === 0) {
+            return false;
+        }
+        var foundCh = children.find(fn);
+        return foundCh ? foundCh : children.reduce(function (acc, n) {
+            if (acc)
+                return acc;
+            return n.getChild(fn);
+        }, false);
+    };
+    NodeBuilder.prototype.build = function () {
+        var tag = document.createElementNS(this.tagNS, this.node.getType());
+        var attr = this.node.getAttributes();
+        Object.keys(attr)
+            .filter(function (key) { return attr[key]; })
+            .forEach(function (key) { return tag.setAttribute(key, attr[key]); });
+        if (this.children.length === 0) {
+            return tag;
+        }
+        var children = this.children.map(function (ch) {
+            return ch.build();
+        });
+        children.forEach(function (ch) { return tag.appendChild(ch); });
+        return tag;
+    };
+    return NodeBuilder;
+}());
+
+//# sourceMappingURL=node-builder.js.map
+
+/***/ }),
+
+/***/ 290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RootNode; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var RootNode = (function (_super) {
+    __extends(RootNode, _super);
+    function RootNode(meta) {
+        var _this = _super.call(this, meta) || this;
+        _this.width = meta.width.toString();
+        _this.height = meta.height.toString();
+        _this.viewBox = meta.viewBox.join(' ');
+        _this.ratio = meta.viewBox[3] / meta.initialScreenWidth;
+        return _this;
+    }
+    RootNode.prototype.getAttributes = function () {
+        var modified = this.mod ? this.name + "--" + this.mod : null;
+        var obj = {
+            class: [this.name, modified, this.class].filter(function (n) { return n; }).join(' '),
+            viewBox: this.viewBox,
+            width: this.width,
+            height: this.height,
+        };
+        var newObj = Object.assign(obj, this.customAttr);
+        return newObj;
+    };
+    return RootNode;
+}(__WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]));
+
+//# sourceMappingURL=root-node.model.js.map
+
+/***/ }),
+
+/***/ 291:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__ = __webpack_require__(292);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__["a"]; });
+
+
+//# sourceMappingURL=monsters.exports.js.map
+
+/***/ }),
+
+/***/ 292:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__head__ = __webpack_require__(303);
+// Entities
+
+
+// Model Parts
+
+var bodyFigure = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'body',
+    mod: 'figure',
+    customAttr: {
+        fill: '#6fc055',
+        cx: '82.66',
+        cy: '285.78',
+        rx: '50.36',
+        ry: '139.24',
+    },
+    tagType: 'ellipse',
+});
+var body = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'body',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(body).addParts(__WEBPACK_IMPORTED_MODULE_2__head__["a" /* default */], bodyFigure));
+//# sourceMappingURL=alien.js.map
+
+/***/ }),
+
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -524,7 +795,7 @@ var GameItem = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(204);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -561,7 +832,7 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -587,7 +858,299 @@ var MonsterSprite = (function () {
 
 //# sourceMappingURL=sprite.directive.js.map
 
+/***/ }),
+
+/***/ 302:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__figure_model__ = __webpack_require__(310);
+
+var make = function (node) {
+    return new __WEBPACK_IMPORTED_MODULE_0__figure_model__["a" /* FigureModel */](node, []);
+};
+/* harmony default export */ __webpack_exports__["a"] = (make);
+//# sourceMappingURL=figure-builder.js.map
+
+/***/ }),
+
+/***/ 303:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__content__ = __webpack_require__(304);
+
+
+
+var headFigure = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'head',
+    mod: 'figure',
+    customAttr: {
+        fill: '#6fc055',
+        d: 'M82.67,153.65a39.12,39.12,0,0,1-33.88-19.56L5.25,58.69A39.13,39.13,0,0,1,39.13,0H126.2a39.13,39.13,0,0,1,33.88,58.69l-43.53,75.4A39.13,39.13,0,0,1,82.67,153.65Z',
+    },
+    tagType: 'path',
+});
+var head = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'head',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(head).addParts(headFigure, __WEBPACK_IMPORTED_MODULE_2__content__["a" /* default */]));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+
+/***/ 304:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mouth__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nose__ = __webpack_require__(309);
+
+
+
+
+
+var content = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'content',
+    customAttr: {},
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(content).addParts(__WEBPACK_IMPORTED_MODULE_2__mouth__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__eyes__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__nose__["a" /* default */]));
+//# sourceMappingURL=content.js.map
+
+/***/ }),
+
+/***/ 305:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+
+var mouth = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'mouth',
+    customAttr: {
+        fill: '#f24943',
+        d: 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z',
+    },
+    tagType: 'path'
+});
+/* harmony default export */ __webpack_exports__["a"] = (mouth);
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+
+/***/ 306:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_left__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eye_right__ = __webpack_require__(308);
+
+
+
+
+var eyes = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'eyes',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(eyes).addParts(__WEBPACK_IMPORTED_MODULE_2__eye_left__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__eye_right__["a" /* default */]));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+
+/***/ 307:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+// Entities
+
+
+var eyeball = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'eyeball',
+    mod: 'left',
+    customAttr: {
+        d: 'M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z'
+    },
+    tagType: 'path',
+});
+var iris = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'iris',
+    mod: 'left',
+    customAttr: {
+        fill: '#586ab1',
+        cx: '51.86',
+        cy: '53.61',
+        r: '15.32'
+    },
+    tagType: 'circle',
+});
+var pupil = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'pupil',
+    mod: 'left',
+    customAttr: {
+        cx: '51.86',
+        cy: '53.61',
+        r: '7.21',
+    },
+    tagType: 'circle',
+});
+var eye = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'eye',
+    mod: 'left',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(eye).addParts(eyeball, iris, pupil));
+//# sourceMappingURL=eye-left.js.map
+
+/***/ }),
+
+/***/ 308:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+
+
+var eyeball = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'eyeball',
+    mod: 'right',
+    customAttr: {
+        d: 'M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z'
+    },
+    tagType: 'path',
+});
+var iris = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'iris',
+    mod: 'right',
+    customAttr: {
+        fill: '#586ab1',
+        cx: '113.53',
+        cy: '53.61',
+        r: '15.32'
+    },
+    tagType: 'circle',
+});
+var pupil = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'pupil',
+    customAttr: {
+        cx: '113.53',
+        cy: '53.61',
+        r: '4.75',
+    },
+    tagType: 'circle',
+});
+var eye = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'eye',
+    mod: 'right',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(eye).addParts(eyeball, iris, pupil));
+//# sourceMappingURL=eye-right.js.map
+
+/***/ }),
+
+/***/ 309:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__figure_builder__ = __webpack_require__(302);
+
+
+var nostrillLeft = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'nostril',
+    mod: 'left',
+    customAttr: {
+        cx: '76.75',
+        cy: '99.18',
+        r: '2.49',
+    },
+    tagType: 'circle'
+});
+var nostrillRight = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'nostril',
+    mod: 'right',
+    customAttr: {
+        cx: '88.6',
+        cy: '99.18',
+        r: '2.49',
+    },
+    tagType: 'circle'
+});
+var nose = new __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */]({
+    name: 'nose',
+    tagType: 'g',
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__figure_builder__["a" /* default */])(nose).addParts(nostrillLeft, nostrillRight));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+
+/***/ 310:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FigureModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_model__ = __webpack_require__(202);
+
+var FigureModel = (function () {
+    function FigureModel(meta, children) {
+        this.meta = meta;
+        this.children = children;
+    }
+    FigureModel.prototype.addPart = function (node) {
+        var child = node instanceof __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */] ?
+            new FigureModel(node, []) :
+            node;
+        return new FigureModel(this.meta, this.children.concat([child]));
+    };
+    FigureModel.prototype.addParts = function () {
+        var nodes = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            nodes[_i] = arguments[_i];
+        }
+        var children = nodes.map(function (node) {
+            if (node instanceof __WEBPACK_IMPORTED_MODULE_0__node_model__["a" /* Node */])
+                return new FigureModel(node, []);
+            return node;
+        });
+        return new FigureModel(this.meta, this.children.concat(children));
+    };
+    FigureModel.prototype.getParts = function () {
+        return this.children;
+    };
+    FigureModel.prototype.getPart = function (fn) {
+        var children = this.children.slice();
+        if (children.length === 0) {
+            return false;
+        }
+        var foundCh = children.find(fn);
+        return foundCh ? foundCh : children.reduce(function (acc, n) {
+            if (acc)
+                return acc;
+            return n.getPart(fn);
+        }, false);
+    };
+    FigureModel.prototype.getMeta = function () {
+        return this.meta;
+    };
+    return FigureModel;
+}());
+
+//# sourceMappingURL=figure.model.js.map
+
 /***/ })
 
-},[206]);
+},[207]);
 //# sourceMappingURL=main.js.map

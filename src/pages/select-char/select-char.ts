@@ -20,7 +20,8 @@ export class SelectCharPage {
     return this.repo.getMonsters();
   }
 
-  beginGame(monster) {
+  beginGame() {
+    const monster = this.repo.getNewMonsters()[0];
     this.navCtrl.push(GamePage, { monster: monster });
   }
 }

@@ -7,8 +7,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 //data model
 import { ModelModule } from './model/model.module';
 
-import { ParseService } from './parse.service';
-
 import { MyApp } from './app.component';
 import { MonsterSprite } from '../pages/monster-sprite/sprite.directive';
 import { HomePage } from '../pages/home/home';
@@ -39,7 +37,6 @@ import { GamePage } from '../pages/game/game';
   providers: [
     StatusBar,
     SplashScreen,
-    ParseService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

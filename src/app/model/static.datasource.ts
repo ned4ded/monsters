@@ -5,6 +5,11 @@ import "rxjs/add/observable/from";
 // Entities
 import { Monster } from "./monster.model";
 import { GameItem } from "./game-item.model";
+import { MonsterConstructor } from './svg-builder/monster-constructor';
+import { RootNode } from './svg-builder/root-node.model';
+
+// DataShorties
+import * as svgMonsters from './svg-builder/svg-sprite/monsters.exports';
 
 @Injectable()
 export class StaticDataSource {
@@ -27,8 +32,30 @@ export class StaticDataSource {
     new GameItem(6, 'love-glasses', 296.347, 103.926),
   ];
 
+  private newMonsters: MonsterConstructor[] = [
+    new MonsterConstructor({
+      meta: new RootNode({
+        name: 'svg-container',
+        tagType: 'svg',
+        customAttr: {
+          'xmlns': 'http://www.w3.org/2000/svg',
+          'xmlns:xlink': 'http://www.w3.org/1999/xlink'
+        },
+        viewBox: [0, 0, 165.37, 302.36],
+        width: '80%',
+        height: '80%',
+        initialScreenWidth: 150,
+      }),
+      figure: svgMonsters.alienTorso
+    }),
+  ]
+
   getMonsters(): Observable<Monster[]> {
     return Observable.from([this.monsters]);
+  }
+
+  getNewMonsters(): Observable<MonsterConstructor[]> {
+    return Observable.from([this.newMonsters]);
   }
 
   getItems(): Observable<GameItem[]> {

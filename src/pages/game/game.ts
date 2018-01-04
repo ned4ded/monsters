@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { NavController, NavParams } from 'ionic-angular';
 import { Monster } from '../../app/model/monster.model';
 import { MonsterRepository } from '../../app/model/monster.repository';
 import { GameItem } from '../../app/model/game-item.model';
 import { GameItemRepository } from '../../app/model/game-item.repository';
+import { MonsterConstructor } from '../../app/model/svg-builder/monster-constructor';
 
 @Component({
   selector: 'game-page',
   templateUrl: 'game.html'
 })
-export class GamePage {
-  monster: Monster;
+export class GamePage implements OnInit {
+  monster: MonsterConstructor;
   items: GameItem[];
 
   constructor(
@@ -23,12 +25,20 @@ export class GamePage {
     this.items = gameItemRepo.getItems();
   }
 
+  ngOnInit() {
+    this.buildMonster();
+  }
+
   endGame() {
     this.navCtrl.pop();
   }
 
   getItems() {
     return this.items;
+  }
+
+  buildMonster() {
+    this.monster.build();
   }
 
   getCorrelationalSize(item: GameItem, side: string, value: number) :number {
@@ -42,8 +52,8 @@ export class GamePage {
     }
   }
 
-  getMonsterViewBox() : string {
-    const viewBox = this.monsterRepo.getViewBox(this.monster.id);
-    return viewBox.slice().join(' ');
-  }
+  // getMonsterViewBox() : string {
+  //   const viewBox = this.monsterRepo.getViewBox(this.monster.id);
+  //   return viewBox.slice().join(' ');
+  // }
 }
