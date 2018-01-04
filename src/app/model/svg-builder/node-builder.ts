@@ -1,29 +1,28 @@
-import { Node } from './node.model';
-
+import { FigureModel } from './figure.model';
 
 export class NodeBuilder {
-  node: Node;
-  children: NodeBuilder[];
+  private attr: {};
+  private type: string;
+  children: FigureModel[];
   tagNS: string;
+
   private tagNamespaces: Map<string, string> = new Map([
     ['svg', 'http://www.w3.org/2000/svg'],
     ['html', 'http://www.w3.org/1999/xhtml']
   ]);
 
-  constructor(
-    node: Node,
-    children: NodeBuilder[],
-    tagNS: string,
-  ) {
-    this.node = node;
-    this.children = children;
-    this.tagNS = this.tagNamespaces.get(tagNS);
+  constructor(figure: FigureModel, tagNS?)
+  {
+    this.attr = figure.getAttributes();
+    this.type = figure.getType();
+    this.children = figure.getParts();
+    this.tagNS = this.tagNamespaces.get(tagNS || 'svg');
   }
 
   build(): Element {
-      const tag = document.createElementNS(this.tagNS, this.node.getType());
+      const tag = document.createElementNS(this.tagNS, this.type);
 
-      const attr = this.node.getAttributes();
+      const attr = this.attr;
 
       Object.keys(attr)
             .filter(key => attr[key])
@@ -34,7 +33,7 @@ export class NodeBuilder {
       }
 
      	const children = this.children.map(ch => {
-        return ch.build();
+        return new NodeBuilder(ch).build();
       });
 
       children.forEach(ch => tag.appendChild(ch));

@@ -1,5 +1,4 @@
 import { Node } from '../../node.model';
-import { FigureModel } from '../../figure.model';
 import makeFigure from '../../figure-builder';
 
 const eyeball = new Node({

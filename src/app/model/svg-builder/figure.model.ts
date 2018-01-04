@@ -48,6 +48,14 @@ export class FigureModel {
     }, false);
   }
 
+  getType() {
+    return this.meta.getType();
+  }
+
+  getAttributes() {
+    return this.meta.getAttributes();
+  }
+
   getMeta() {
     return this.meta;
   }
