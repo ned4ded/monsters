@@ -311,10 +311,9 @@ var GameItemRepository = (function () {
     };
     GameItemRepository = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__static_datasource__["a" /* StaticDataSource */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__static_datasource__["a" /* StaticDataSource */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__static_datasource__["a" /* StaticDataSource */]])
     ], GameItemRepository);
     return GameItemRepository;
-    var _a;
 }());
 
 //# sourceMappingURL=game-item.repository.js.map
@@ -524,8 +523,8 @@ var GamePage = (function () {
     };
     GamePage.prototype.endGame = function () {
         this.canLeave = true;
-        this.elemRepo.clear();
         Object(__WEBPACK_IMPORTED_MODULE_6__game_browser__["b" /* endGame */])();
+        this.elemRepo.clear();
         this.navCtrl.pop();
     };
     GamePage.prototype.getItems = function () {
@@ -1327,6 +1326,7 @@ var listen = function (cancel) {
 var beginGame = function (repository) {
     console.log('begin game');
     repo = repository;
+    console.log(repo);
     document.addEventListener('touchmove', touchMove);
     document.addEventListener('touchend', end);
     listen();
@@ -1334,6 +1334,7 @@ var beginGame = function (repository) {
 var endGame = function () {
     listen(true);
     repo = null;
+    listenersArr = [];
     document.removeEventListener('touchmove', touchMove);
     document.removeEventListener('touchend', end);
 };

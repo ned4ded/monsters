@@ -48,8 +48,8 @@ export class GamePage implements OnInit {
 
   endGame() {
     this.canLeave = true;
-    this.elemRepo.clear();
     endGame();
+    this.elemRepo.clear();
     this.navCtrl.pop();
   }
 

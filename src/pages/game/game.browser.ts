@@ -142,6 +142,7 @@ const listen = (cancel?:boolean) => {
 const beginGame = (repository) => {
   console.log('begin game');
   repo = repository;
+  console.log(repo);
   document.addEventListener('touchmove', touchMove);
   document.addEventListener('touchend', end);
 
@@ -151,6 +152,7 @@ const beginGame = (repository) => {
 const endGame = () => {
   listen(true);
   repo = null;
+  listenersArr = [];
   document.removeEventListener('touchmove', touchMove);
   document.removeEventListener('touchend', end);
 }
