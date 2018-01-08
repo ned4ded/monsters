@@ -13,6 +13,7 @@ export class GameItemRepository {
   }
 
   getItems() : GameItem[] {
+    console.log('get items repo');
     return this.items;
   }
 

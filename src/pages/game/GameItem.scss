@@ -1,6 +1,10 @@
 .GameItem {
   width: 100px;
 
+  &[data-blocked="true"] {
+    opacity: .3;
+  }
+
   &--vertical {
     width: auto;
     height: 60px;

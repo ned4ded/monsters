@@ -1,32 +1,27 @@
-<ion-content>
-  <div class="container">
-    <div id="nb-target" class="screen">
+<ion-content fixed no-bounce>
+  <div id="container" class="container">
+    <div id="nb-target" class="screen {{monster.getName()}}__screen">
+      <div id="on-screen">
+
+      </div>
       <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">
         <ion-icon name="close" class="icon-close"></ion-icon>
       </button>
     </div>
-    <div class="panel-container">
+    <div id="panel" class="panel-container">
       <ul class="panel">
-        <li *ngFor="let item of getItems()" class="panel__item">
-          <div class="draggable-element">
+        <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? ' panel__doubled' : ''}}">
             <img
-            src="assets/imgs/GameItems/{{item.name}}.svg"
-            alt="image of {{item.name}}"
+            id="{{item.id}}"
+            src="assets/imgs/GameItems/{{item.el.name}}.svg"
+            alt="image of {{item.el.name}}"
+            data-blocked="false"
             class="GameItem
-                  {{item.vertical? 'GameItem--vertical' : ''}}
-                  GameItem__{{item.name}}">
-
-            <img
-            *ngIf="item.doubled"
-            src="assets/imgs/GameItems/{{item.name}}.svg"
-            alt="image of {{item.name}}"
-            class="GameItem
-                  {{item.vertical? 'GameItem--vertical' : ''}}
-                  GameItem__{{item.name}}">
-
-          </div>
+                  {{item.el.vertical? 'GameItem--vertical' : ''}}
+                  GameItem__{{item.el.name}}">
         </li>
       </ul>
     </div>
   </div>
+  <div id="active-ct"></div>
 </ion-content>

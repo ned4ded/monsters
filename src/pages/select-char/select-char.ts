@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Monster } from "../../app/model/monster.model";
 import { MonsterRepository } from '../../app/model/monster.repository';
 import { GamePage } from '../game/game';
+import { SvgBuilder } from '../../app/model/svg-builder/svg-builder.service';
 
 @Component({
   selector: 'select-char-page',
@@ -16,12 +16,11 @@ export class SelectCharPage {
 
   }
 
-  getMonsters(): Monster[] {
+  getMonsters(): SvgBuilder[] {
     return this.repo.getMonsters();
   }
 
-  beginGame() {
-    const monster = this.repo.getNewMonsters()[0];
+  beginGame(monster) {
     this.navCtrl.push(GamePage, { monster: monster });
   }
 }

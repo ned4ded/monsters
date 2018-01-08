@@ -1,26 +1,9 @@
 // Entities
-import { Node } from '../../node.model';
-import makeFigure from '../../figure-builder';
+import { make, group } from '../../svg-constructor.library';
 
 // Model Parts
 import head from './head';
 
-const bodyFigure = new Node({
-  name: 'body',
-  mod: 'figure',
-  customAttr: {
-    fill: '#6fc055',
-    cx: '82.66',
-    cy: '285.78',
-    rx: '50.36',
-    ry: '139.24',
-  },
-  tagType: 'ellipse',
-});
+const body = make.ellipse({name: 'body', mod: 'figure'}, 82.66, 285.78, 50.36, 139.24);
 
-const body = new Node({
-  name: 'body',
-  tagType: 'g',
-})
-
-export default makeFigure(body).addParts(head, bodyFigure);
+export default group('alien', head, body);

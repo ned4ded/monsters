@@ -1,9 +1,9 @@
-import { FigureModel } from './figure.model';
+import { NodeModel } from './node.model';
 
 export class NodeBuilder {
   private attr: {};
   private type: string;
-  children: FigureModel[];
+  children: NodeModel[];
   tagNS: string;
 
   private tagNamespaces: Map<string, string> = new Map([
@@ -11,11 +11,11 @@ export class NodeBuilder {
     ['html', 'http://www.w3.org/1999/xhtml']
   ]);
 
-  constructor(figure: FigureModel, tagNS?)
+  constructor(node: NodeModel, tagNS?)
   {
-    this.attr = figure.getAttributes();
-    this.type = figure.getType();
-    this.children = figure.getParts();
+    this.attr = node.getAttributes();
+    this.type = node.getType();
+    this.children = node.getParts();
     this.tagNS = this.tagNamespaces.get(tagNS || 'svg');
   }
 

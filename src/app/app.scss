@@ -5,52 +5,52 @@ body {
   background-color: lightgrey;
 }
 
-.iphone {
-  margin: auto;
-  margin-top: 160px;
-  width: 350px;
-  height: 625px;
+// .iphone {
+//   margin: auto;
+//   margin-top: 160px;
+//   width: 350px;
+//   height: 625px;
+//
+//   position: relative;
+//
+//   &-svg {
+//     position: absolute;
+//     z-index: -1;
+//     width: 119%;
+//     left: 50%;
+//     top: -118px;
+//     transform: translateX(-50%);
+//     .cls-1{fill:#fdfdfd;stroke-width:2px;}
+//     .cls-1,.cls-2,.cls-3{stroke:#7e89a3;}
+//     .cls-2{fill:#fff;}
+//     .cls-3{fill:none;}
+//   }
+// }
 
-  position: relative;
-
-  &-svg {
-    position: absolute;
-    z-index: -1;
-    width: 119%;
-    left: 50%;
-    top: -118px;
-    transform: translateX(-50%);
-    .cls-1{fill:#fdfdfd;stroke-width:2px;}
-    .cls-1,.cls-2,.cls-3{stroke:#7e89a3;}
-    .cls-2{fill:#fff;}
-    .cls-3{fill:none;}
-  }
-}
 
 
-
-@media (max-width: 460px) {
-  .iphone {
-    position: static;
-  }
-}
-
-@media (max-height: 900px) {
-  .iphone {
-    margin-top: 25px;
-
-    &-svg {
-      display: none;
-    }
-  }
-}
-
-@media (max-height: 625px) {
-  .iphone {
-    margin-top: 0;
-    position: static;
-  }
-}
+// @media (max-width: 460px) {
+//   .iphone {
+//     position: static;
+//   }
+// }
+//
+// @media (max-height: 900px) {
+//   .iphone {
+//     margin-top: 25px;
+//
+//     &-svg {
+//       display: none;
+//     }
+//   }
+// }
+//
+// @media (max-height: 625px) {
+//   .iphone {
+//     margin-top: 0;
+//     position: static;
+//   }
+// }
 
 // App Global Sass
 // --------------------------------------------------
