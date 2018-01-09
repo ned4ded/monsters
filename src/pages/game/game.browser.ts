@@ -8,6 +8,8 @@ const target = () => document.getElementById('container');
 
 const cn = () => document.getElementById('active-ct');
 
+const screen = () => document.getElementById('on-screen');
+
 const touchMove = (event) => {
   const screenHeight = document.getElementById('nb-target').scrollHeight;
 
@@ -31,8 +33,6 @@ const disableTouchMouse = (event) => {
   event.preventDefault();
 }
 
-const screen = () => document.getElementById('on-screen');
-
 const updateRepo = () => {
   return repo.getElements(col => col);
 }
@@ -48,11 +48,11 @@ const end = () => {
   if (forRemove) forRemove.remove();
 
   const { html, virt } = active;
-  const coreHtmlId = getCoreElements().find(e => e.el.name === virt.el.name).id;
+  const coreHtmlId = getCoreElements().find(e => e.el.getUniqName() === virt.el.getUniqName()).id;
   const coreHtml = document.getElementById(coreHtmlId);
 
   const width = html.scrollWidth / 2;
-  const height = html.scrollHeight / 2; onPanel
+  const height = html.scrollHeight / 2;
 
   cn().removeChild(html);
 
@@ -73,12 +73,12 @@ const end = () => {
   listen();
 }
 
-const start = (html, virt) => {
+const start = (event, html, virt) => {
   document.addEventListener('touchmove', disableTouchMouse);
 
   const parent = html.parentElement;
   const onScreen = (parent.id === 'on-screen') ? true : false;
-  const coreHtmlId = getCoreElements().find(e => e.el.name === virt.el.name).id;
+  const coreHtmlId = getCoreElements().find(e => e.el.getUniqName() === virt.el.getUniqName()).id;
   const coreHtml = document.getElementById(coreHtmlId);
 
 
@@ -88,6 +88,11 @@ const start = (html, virt) => {
 
   const clone = html.cloneNode();
 
+  x = event.touches[0].pageX;
+  y = event.touches[0].pageY;
+  const width = html.scrollWidth / 2;
+  const height = html.scrollHeight / 2;
+
   if (onScreen) {
     html.id = 'remove';
     html.setAttribute('style', 'display: none');
@@ -95,16 +100,16 @@ const start = (html, virt) => {
     clone.removeAttribute('style');
     repo.deleteElement(virt.id);
     listenersArr = listenersArr.filter(el => el !== virt.id);
+    cn().setAttribute('style', `position: absolute; top: ${y - height}px; left: ${x - width}px`);
+
+  } else {
+    cn().setAttribute('style', `position: absolute; top: ${y - height}px; left: ${x - width}px`);
   }
 
+  const activated = document.getElementById('activated');
+  if(activated) activated.remove();
+
   clone.id = 'activated';
-
-  // x = event.touches[0].pageX;
-  // y = event.touches[0].pageY;
-
-  const width = html.scrollWidth / 2;
-  const height = html.scrollHeight / 2;
-  cn().setAttribute('style', `position: absolute; top: ${y - height}px; left: ${x - width}px`);
 
   active = { html: clone, virt: virt };
   cn().appendChild(clone);
@@ -115,10 +120,9 @@ const listen = (cancel?:boolean) => {
   const elements = updateRepo();
 
   elements.forEach(virtElem => {
-
     const id = virtElem.id;
     const htmlElem = document.getElementById(id);
-    const listnerOnStart = () => start(htmlElem, virtElem);
+    const listnerOnStart = (ev) => start(ev, htmlElem, virtElem);
 
     if(cancel) {
       htmlElem.removeEventListener('touchstart', listnerOnStart);
@@ -132,17 +136,16 @@ const listen = (cancel?:boolean) => {
   });
 };
 
+const reset = () => {
+  listenersArr = [];
+  const elementsOnScreen = Array.from(screen().children);
+  elementsOnScreen.forEach(n => n.remove());
 
-
-
-
-
-
+  setTimeout(listen, 0);
+}
 
 const beginGame = (repository) => {
-  console.log('begin game');
   repo = repository;
-  console.log(repo);
   document.addEventListener('touchmove', touchMove);
   document.addEventListener('touchend', end);
 
@@ -157,4 +160,4 @@ const endGame = () => {
   document.removeEventListener('touchend', end);
 }
 
-export { endGame, beginGame };
+export { endGame, beginGame, reset as resetGame };

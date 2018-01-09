@@ -5,6 +5,7 @@ export class RootMetaModel extends MetaModel {
   private height: string;
   private viewBox: string;
   private ratio: number;
+  private anchor: number;
 
   constructor(meta : {
     name: string,
@@ -16,9 +17,11 @@ export class RootMetaModel extends MetaModel {
     height?: string;
     viewBox: [number, number, number, number];
     initialScreenWidth: number;
+    anchor: number;
   }) {
     super(meta);
 
+    this.anchor = meta.anchor;
     this.width = meta.width.toString();
     this.height = meta.height.toString();
     this.viewBox = meta.viewBox.join(' ');
@@ -35,5 +38,9 @@ export class RootMetaModel extends MetaModel {
     };
     const newObj = Object.assign(obj, this.customAttr);
     return newObj;
+  }
+
+  getAnchor() {
+    return 'anchor-' + this.anchor;
   }
 }

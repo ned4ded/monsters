@@ -1,7 +1,7 @@
 import { SvgBuilder } from './svg-builder.service';
 import { RootMetaModel } from './root-meta.model';
 
-export default ({name, viewBox, initialScreenWidth, figure}) => {
+export default ({name, viewBox, initialScreenWidth, figure, anchor}) => {
 
   const node = new RootMetaModel({
     name: name,
@@ -15,6 +15,7 @@ export default ({name, viewBox, initialScreenWidth, figure}) => {
     height: '80%',
     viewBox: viewBox,
     initialScreenWidth: initialScreenWidth,
+    anchor: anchor,
   });
 
   return new SvgBuilder({ meta: node, figure: figure});

@@ -4,8 +4,12 @@
       <div id="on-screen">
 
       </div>
-      <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">
+      <button ion-button icon-only outline class="btn-close" (click)="endGame()">
         <ion-icon name="close" class="icon-close"></ion-icon>
+      </button>
+
+      <button ion-button icon-only outline class="btn-reset" (click)="reset()">
+        <ion-icon name="refresh" class="icon-reset"></ion-icon>
       </button>
     </div>
     <div id="panel" class="panel-container">

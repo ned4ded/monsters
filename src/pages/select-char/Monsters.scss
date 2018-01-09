@@ -6,15 +6,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 
   &__mummy {
     height: 200.968px * $ratio; //200.968px
     &-bgc {
       background-color: rgb(63, 39, 33);
-    }
-    &-big {
-      background: rgb(63, 39, 33) url('../assets/imgs/Monsters/mummy-big.svg') no-repeat center bottom;
-      background-size: cover;
     }
   }
 
@@ -23,20 +20,12 @@
     &-bgc {
       background-color: rgb(59, 69, 126);
     }
-    &-big {
-      background: rgb(59, 69, 126) url('../assets/imgs/Monsters/vampire-big.svg') no-repeat center bottom;
-      background-size: cover;
-    }
   }
 
   &__spider {
     height: 104.901px * 0.424; //104.901px
     &-bgc {
       background-color: rgb(241, 234, 53);
-    }
-    &-big {
-      background: rgb(241, 234, 53) url('../assets/imgs/Monsters/spider-big.svg') no-repeat center bottom;
-      background-size: cover;
     }
   }
 
@@ -45,31 +34,21 @@
     &-bgc {
       background-color: rgb(0, 0, 0);
     }
-    &-big {
-      background: black url('../assets/imgs/Monsters/ghost-big.svg') no-repeat center bottom;
-      background-size: cover;
-    }
   }
 
   &__skeleton {
-    height: 222.792px * 0.424; //222.792px
+    height: 18.25%;
+    // height: 222.792px * 0.424; //222.792px
     &-bgc {
       background-color: rgb(0, 0, 0);
-    }
-    &-big {
-      background: black url('../assets/imgs/Monsters/skeleton-big.svg') no-repeat center bottom;
-      background-size: cover;
     }
   }
 
   &__alien {
-    height: 218.464px * 0.424; //218.464px
+    height: 19.38%;
+    // height: 218.464px * 0.424; //218.464px
     &-bgc {
       background-color: rgb(0, 0, 0);
-    }
-    &-big {
-      background: black url('../assets/imgs/Monsters/alian-big.svg') no-repeat center bottom;
-      background-size: cover;
     }
   }
 

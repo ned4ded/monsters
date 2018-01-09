@@ -10,11 +10,22 @@ export class GameItem {
     public id: number,
     public name: string,
     public width: number,
-    public hight: number,
+    public height: number,
     public doubled? : boolean,
+    public modificator?: string,
   ) {
     this.doubled = doubled || false;
-    this.ratio = roundThreeDecimalPlaces(width / hight);
+    this.ratio = roundThreeDecimalPlaces(width / height);
     this.vertical = this.ratio < 1 ? true : false;
+  }
+
+  setMod(mod) {
+    if(this.modificator) return false;
+
+    return new GameItem(this.id, this.name, this.width, this.height, this.doubled, mod);
+  }
+
+  getUniqName() {
+    return this.modificator? this.name + '--' + this.modificator : this.name;
   }
 };

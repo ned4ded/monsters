@@ -1,27 +1,33 @@
 select-char-page {
   .container {
-    background-color: $primary-light-color;
+    position: relative;
+    background-color: #003d4e;
+  }
+
+  .cls-1 {
+    fill: #003d4e;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+  }
+
+  .bg__content {
+    width: 100%;
+    height: 100%;
   }
 
   .list {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   .item {
-    position: relative;
-    width: 50%;
-    height: 300px;
-    border: 10px solid $primary-light-color;
-  }
-
-  .name {
-    display: block;
-    padding: 6px;
-    background-color: grey;
-    text-align: center;
+    position: absolute;
   }
 }

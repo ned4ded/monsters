@@ -7,7 +7,7 @@ import { GameItemRepository } from '../../app/model/game-item.repository';
 import { SvgBuilder } from '../../app/model/svg-builder/svg-builder.service';
 import { ElementsRepository } from '../../app/model/elements.repository';
 
-import { beginGame, endGame } from './game.browser';
+import { beginGame, endGame, resetGame } from './game.browser';
 
 @Component({
   selector: 'game-page',
@@ -26,12 +26,13 @@ export class GamePage implements OnInit {
     private elemRepo: ElementsRepository,
   ) {
     this.monster = params.get('monster');
-    this.items = gameItemRepo.getItems()
-                              .reduce((acc, e) => {
-                                const newEl = e.doubled? [e, e] : [e]
-                                return [...acc, ...newEl];
-                              }, []);
-    elemRepo.addElements(this.items, true);
+    this.items = gameItemRepo.getItems().reduce((acc, e) => {
+      const newEl = e.doubled? [e, e.setMod('dublicate')] : [e];
+
+      return [...acc, ...newEl];
+    }, []);
+
+    this.elemRepo.addElements(this.items, true);
   }
 
   ionViewCanLeave() {
@@ -69,5 +70,11 @@ export class GamePage implements OnInit {
 
   startGame() {
     beginGame(this.elemRepo);
+  }
+
+  reset() {
+    this.elemRepo.clear();
+    this.elemRepo.addElements(this.items, true);
+    resetGame();
   }
 }

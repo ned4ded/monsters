@@ -1,6 +1,10 @@
 game-page {
   height: auto;
 
+  & .content {
+    background-color: $primary-dark-color;
+  }
+
   #on-screen {
     position: absolute;
     top: 0;
@@ -86,9 +90,24 @@ game-page {
   }
 
   .icon-close {
+    transform: scale(1.25);
+  }
+
+  .btn-reset {
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 15px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 30;
+    opacity: .5;
+  }
+
+  .icon-reset {
+    transform: scale(1, -1) rotate(-90deg);
   }
 
   .screen {

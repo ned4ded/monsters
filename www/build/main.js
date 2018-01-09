@@ -7,9 +7,9 @@ webpackJsonp([0],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return makeCollection; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return group; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return build; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_model__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_builder__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_model__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_builder__ = __webpack_require__(292);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -62,7 +62,7 @@ var build = function (node) {
 
 /***/ }),
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70,11 +70,11 @@ var build = function (node) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_item_model__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_item_model__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__ = __webpack_require__(294);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,12 +112,14 @@ var StaticDataSource = (function () {
                 name: 'alien',
                 viewBox: [0, 0, 165.37, 302.36],
                 initialScreenWidth: 150,
+                anchor: 1,
                 figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["a" /* alienTorso */]
             }),
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
                 name: 'skeleton',
                 viewBox: [0, 0, 200.62, 322.01],
                 initialScreenWidth: 150,
+                anchor: 5,
                 figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["b" /* skeletonTorso */]
             }),
         ];
@@ -140,7 +142,7 @@ var StaticDataSource = (function () {
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -174,13 +176,13 @@ var MetaModel = (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonsterRepository; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_datasource__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_datasource__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -215,7 +217,7 @@ var MonsterRepository = (function () {
 
 /***/ }),
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -228,11 +230,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 118;
+webpackEmptyAsyncContext.id = 119;
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -245,11 +247,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 160;
+webpackEmptyAsyncContext.id = 161;
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -257,16 +259,25 @@ webpackEmptyAsyncContext.id = 160;
 var roundDecimal = function (decimalPlaces) { return function (value) { return Math.round(value * decimalPlaces) / decimalPlaces; }; };
 var roundThreeDecimalPlaces = function (value) { return roundDecimal(1000)(value); };
 var GameItem = (function () {
-    function GameItem(id, name, width, hight, doubled) {
+    function GameItem(id, name, width, height, doubled, modificator) {
         this.id = id;
         this.name = name;
         this.width = width;
-        this.hight = hight;
+        this.height = height;
         this.doubled = doubled;
+        this.modificator = modificator;
         this.doubled = doubled || false;
-        this.ratio = roundThreeDecimalPlaces(width / hight);
+        this.ratio = roundThreeDecimalPlaces(width / height);
         this.vertical = this.ratio < 1 ? true : false;
     }
+    GameItem.prototype.setMod = function (mod) {
+        if (this.modificator)
+            return false;
+        return new GameItem(this.id, this.name, this.width, this.height, this.doubled, mod);
+    };
+    GameItem.prototype.getUniqName = function () {
+        return this.modificator ? this.name + '--' + this.modificator : this.name;
+    };
     return GameItem;
 }());
 
@@ -275,13 +286,13 @@ var GameItem = (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GameItemRepository; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_datasource__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_datasource__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -320,7 +331,7 @@ var GameItemRepository = (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -341,10 +352,12 @@ var find = function (element) {
 var ElementsRepository = (function () {
     function ElementsRepository() {
         this.collection = [];
+        this.lastId = 1;
     }
     ElementsRepository.prototype.addElement = function (element, core) {
         if (core === void 0) { core = false; }
-        var wrapped = { id: this.collection.length + 1, el: element, core: core };
+        this.lastId += 1;
+        var wrapped = { id: this.lastId, el: element, core: core };
         var collection = this.collection.slice().concat([wrapped]);
         this.collection = collection;
         return wrapped.id;
@@ -380,14 +393,14 @@ var ElementsRepository = (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_char_select_char__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select_char_select_char__ = __webpack_require__(209);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -420,15 +433,15 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectCharPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(210);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -455,7 +468,7 @@ var SelectCharPage = (function () {
     };
     SelectCharPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header>\n<ion-content class="container">\n  <ul class="list">\n    <li class="item Monsters__{{monster.getName()}}-bgc" *ngFor="let monster of getMonsters()" (click)="beginGame(monster)">\n      <img src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}">\n    </li>\n  </ul>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
+            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<!-- <ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header> -->\n<ion-content class="container">\n  <div class="bg">\n    <div class="list">\n        <img *ngFor="let monster of getMonsters()" (click)="beginGame(monster)" src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}">\n    </div>\n    <svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">\n        <!-- 0 0 274.02 335.2 -->\n          <rect x="85.42" y="75.81" width="131.4" height="258.09" />\n          <rect x="50.76" y="75.13" width="174.7" height="168.77" />\n          <rect class="cls-1" x="73.82" y="175.48" width="77.09" height="57.09" />\n          <rect class="cls-1" x="140.82" y="243.18" width="56.05" height="79.04" />\n          <polygon points="163 25.67 187.61 46.37 212.22 67.07 163 67.07 113.78 67.07 138.39 46.37 163 25.67" />\n          <polygon points="26.8 234.79 40.21 258.01 53.61 281.22 26.8 281.22 0 281.22 13.4 258.01 26.8 234.79" />\n          <polygon points="26.8 261.8 40.21 285.01 53.61 308.23 26.8 308.23 0 308.23 13.4 285.01 26.8 261.8" />\n          <polygon points="26.8 288.81 40.21 312.02 53.61 335.23 26.8 335.23 0 335.23 13.4 312.02 26.8 288.81" />\n          <ellipse cx="73.82" cy="27.19" rx="59.58" ry="15.53" />\n          <ellipse cx="73.82" cy="26.68" rx="32.87" ry="26.68" />\n          <circle class="cls-1" cx="36.49" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="51.42" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="66.36" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="96.23" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="111.16" cy="26.27" r="3.95" />\n          <rect x="132.5" y="65.79" width="116.11" height="12" />\n          <rect x="37.94" y="162.89" width="70" height="12" />\n          <rect x="186.61" y="213.5" width="70" height="12" />\n          <rect x="214.52" y="225.5" width="52.09" height="12" />\n          <rect x="206.61" y="237.5" width="67.41" height="12" />\n          <rect x="256.78" y="249.5" width="17.23" height="12" />\n          <rect x="269.77" y="261.5" width="4.24" height="12" />\n          <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />\n          <g>\n            <rect id="anchor-1" class="alien" x="71.83" y="4.181" width="0.001" height="1"></rect>\n            <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.001" height="1"></rect>\n            <rect id="anchor-3" class="ghost" x="116.67" y="43.56" width="0.001" height="1"></rect>\n            <rect id="anchor-4" class="mummy" x="30.86" y="100.151" width="0.001" height="1"></rect>\n            <rect id="anchor-5" class="spider" x="240.048" y="112.218" width="0.001" height="1"></rect>\n            <rect id="anchor-6" class="skeleton" x="159.74" y="140.774" width="0.001" height="1"></rect>\n            <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.001" height="1"></rect>\n            <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.001" height="1"></rect>\n            <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.001" height="1"></rect>\n            <rect id="anchor-10" class="yetti" x="100.726" y="269.867" width="0.001" height="1"></rect>\n            <rect id="anchor-11" class="dracula" x="168.399" y="255.942" width="0.001" height="1"></rect>\n            <rect id="anchor-12" class="zombie" x="218.407" y="261.786" width="0.001" height="1"></rect>\n          </g>\n      </svg>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]])
@@ -467,18 +480,18 @@ var SelectCharPage = (function () {
 
 /***/ }),
 
-/***/ 209:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GamePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_game_item_model__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_model_game_item_repository__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_model_elements_repository__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__game_browser__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_game_item_model__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_model_game_item_repository__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_model_elements_repository__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__game_browser__ = __webpack_require__(314);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -504,12 +517,11 @@ var GamePage = (function () {
         this.elemRepo = elemRepo;
         this.canLeave = false;
         this.monster = params.get('monster');
-        this.items = gameItemRepo.getItems()
-            .reduce(function (acc, e) {
-            var newEl = e.doubled ? [e, e] : [e];
+        this.items = gameItemRepo.getItems().reduce(function (acc, e) {
+            var newEl = e.doubled ? [e, e.setMod('dublicate')] : [e];
             return acc.concat(newEl);
         }, []);
-        elemRepo.addElements(this.items, true);
+        this.elemRepo.addElements(this.items, true);
     }
     GamePage.prototype.ionViewCanLeave = function () {
         return this.canLeave;
@@ -541,27 +553,35 @@ var GamePage = (function () {
     GamePage.prototype.startGame = function () {
         Object(__WEBPACK_IMPORTED_MODULE_6__game_browser__["a" /* beginGame */])(this.elemRepo);
     };
+    GamePage.prototype.reset = function () {
+        this.elemRepo.clear();
+        this.elemRepo.addElements(this.items, true);
+        Object(__WEBPACK_IMPORTED_MODULE_6__game_browser__["c" /* resetGame */])();
+    };
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen {{monster.getName()}}__screen">\n      <div id="on-screen">\n\n      </div>\n      <button ion-button icon-only outline color="white" class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? \' panel__doubled\' : \'\'}}">\n            <img\n            id="{{item.id}}"\n            src="assets/imgs/GameItems/{{item.el.name}}.svg"\n            alt="image of {{item.el.name}}"\n            data-blocked="false"\n            class="GameItem\n                  {{item.el.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.el.name}}">\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
+            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen {{monster.getName()}}__screen">\n      <div id="on-screen">\n\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? \' panel__doubled\' : \'\'}}">\n            <img\n            id="{{item.id}}"\n            src="assets/imgs/GameItems/{{item.el.name}}.svg"\n            alt="image of {{item.el.name}}"\n            data-blocked="false"\n            class="GameItem\n                  {{item.el.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.el.name}}">\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__app_model_game_item_repository__["a" /* GameItemRepository */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__app_model_game_item_repository__["a" /* GameItemRepository */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__app_model_elements_repository__["a" /* ElementsRepository */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__app_model_elements_repository__["a" /* ElementsRepository */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_4__app_model_game_item_repository__["a" /* GameItemRepository */],
+            __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */],
+            __WEBPACK_IMPORTED_MODULE_5__app_model_elements_repository__["a" /* ElementsRepository */]])
     ], GamePage);
     return GamePage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=game.js.map
 
 /***/ }),
 
-/***/ 210:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(230);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -569,7 +589,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 229:
+/***/ 230:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -577,19 +597,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__model_model_module__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_select_char_select_char__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_game_game__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_screen_orientation__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_game_game__ = __webpack_require__(210);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -607,28 +629,29 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_select_char_select_char__["a" /* SelectCharPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_game_game__["a" /* GamePage */],
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__["a" /* SelectCharPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_game_game__["a" /* GamePage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
                     links: []
                 }),
-                __WEBPACK_IMPORTED_MODULE_5__model_model_module__["a" /* ModelModule */],
+                __WEBPACK_IMPORTED_MODULE_6__model_model_module__["a" /* ModelModule */],
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_select_char_select_char__["a" /* SelectCharPage */],
-                __WEBPACK_IMPORTED_MODULE_9__pages_game_game__["a" /* GamePage */],
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__["a" /* SelectCharPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_game_game__["a" /* GamePage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_5__ionic_native_screen_orientation__["a" /* ScreenOrientation */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
         })
@@ -640,17 +663,17 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModelModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_datasource__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monster_repository__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_repository__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__elements_repository__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_datasource__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__monster_repository__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__game_item_repository__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__elements_repository__ = __webpack_require__(207);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -680,16 +703,16 @@ var ModelModule = (function () {
 
 /***/ }),
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_builder_service__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__root_meta_model__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_builder_service__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__root_meta_model__ = __webpack_require__(293);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function (_a) {
-    var name = _a.name, viewBox = _a.viewBox, initialScreenWidth = _a.initialScreenWidth, figure = _a.figure;
+    var name = _a.name, viewBox = _a.viewBox, initialScreenWidth = _a.initialScreenWidth, figure = _a.figure, anchor = _a.anchor;
     var node = new __WEBPACK_IMPORTED_MODULE_1__root_meta_model__["a" /* RootMetaModel */]({
         name: name,
         tagType: 'svg',
@@ -702,6 +725,7 @@ var ModelModule = (function () {
         height: '80%',
         viewBox: viewBox,
         initialScreenWidth: initialScreenWidth,
+        anchor: anchor,
     });
     return new __WEBPACK_IMPORTED_MODULE_0__svg_builder_service__["a" /* SvgBuilder */]({ meta: node, figure: figure });
 });;
@@ -709,7 +733,7 @@ var ModelModule = (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -739,12 +763,12 @@ var SvgBuilder = (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NodeModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(106);
 
 var NodeModel = (function () {
     function NodeModel(meta, children) {
@@ -800,7 +824,7 @@ var NodeModel = (function () {
 
 /***/ }),
 
-/***/ 291:
+/***/ 292:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -838,12 +862,12 @@ var NodeBuilder = (function () {
 
 /***/ }),
 
-/***/ 292:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RootMetaModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__meta_model__ = __webpack_require__(106);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -859,6 +883,7 @@ var RootMetaModel = (function (_super) {
     __extends(RootMetaModel, _super);
     function RootMetaModel(meta) {
         var _this = _super.call(this, meta) || this;
+        _this.anchor = meta.anchor;
         _this.width = meta.width.toString();
         _this.height = meta.height.toString();
         _this.viewBox = meta.viewBox.join(' ');
@@ -876,6 +901,9 @@ var RootMetaModel = (function (_super) {
         var newObj = Object.assign(obj, this.customAttr);
         return newObj;
     };
+    RootMetaModel.prototype.getAnchor = function () {
+        return 'anchor-' + this.anchor;
+    };
     return RootMetaModel;
 }(__WEBPACK_IMPORTED_MODULE_0__meta_model__["a" /* MetaModel */]));
 
@@ -883,12 +911,12 @@ var RootMetaModel = (function (_super) {
 
 /***/ }),
 
-/***/ 293:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__skeleton_torso_skeleton__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__skeleton_torso_skeleton__ = __webpack_require__(303);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__skeleton_torso_skeleton__["a"]; });
 
@@ -898,12 +926,12 @@ var RootMetaModel = (function (_super) {
 
 /***/ }),
 
-/***/ 294:
+/***/ 295:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(296);
 // Entities
 
 // Model Parts
@@ -914,12 +942,12 @@ var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 
 /***/ }),
 
-/***/ 295:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__content__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__content__ = __webpack_require__(297);
 
 
 var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'head', mod: 'figure' }, 'M82.67,153.65a39.12,39.12,0,0,1-33.88-19.56L5.25,58.69A39.13,39.13,0,0,1,39.13,0H126.2a39.13,39.13,0,0,1,33.88,58.69l-43.53,75.4A39.13,39.13,0,0,1,82.67,153.65Z');
@@ -928,14 +956,14 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 
 /***/ }),
 
-/***/ 296:
+/***/ 297:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(302);
 
 
 
@@ -945,7 +973,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -957,13 +985,13 @@ var mouth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 298:
+/***/ 299:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(301);
 
 
 
@@ -972,7 +1000,7 @@ var mouth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 299:
+/***/ 300:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -986,7 +1014,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 300:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1000,7 +1028,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1013,13 +1041,13 @@ var nostrillRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /
 
 /***/ }),
 
-/***/ 302:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__head__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__head__ = __webpack_require__(305);
 
 
 
@@ -1028,7 +1056,7 @@ var nostrillRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /
 
 /***/ }),
 
-/***/ 303:
+/***/ 304:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1042,14 +1070,14 @@ var ribThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 
 /***/ }),
 
-/***/ 304:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eyes__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jaws__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eyes__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jaws__ = __webpack_require__(310);
 
 
 
@@ -1061,13 +1089,13 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 
 /***/ }),
 
-/***/ 305:
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_right__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_left__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_right__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_left__ = __webpack_require__(308);
 
 
 
@@ -1076,7 +1104,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 
 /***/ }),
 
-/***/ 306:
+/***/ 307:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1089,7 +1117,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1102,7 +1130,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 308:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1113,13 +1141,13 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 309:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__jaw_top__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jaw_bottom__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__jaw_top__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jaw_bottom__ = __webpack_require__(312);
 
 
 
@@ -1128,7 +1156,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 
 /***/ }),
 
-/***/ 310:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1147,7 +1175,7 @@ var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 
 /***/ }),
 
-/***/ 311:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1166,7 +1194,7 @@ var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 
 /***/ }),
 
-/***/ 312:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1174,8 +1202,9 @@ var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_screen_orientation__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(208);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1190,20 +1219,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MyApp = (function () {
-    function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+    function MyApp(platform, statusBar, splashScreen, screenOrientation) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            statusBar.styleDefault();
+            statusBar.styleLightContent();
             splashScreen.hide();
+            if (platform.is('cordova'))
+                screenOrientation.lock(screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
         });
     }
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_screen_orientation__["a" /* ScreenOrientation */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1212,18 +1244,20 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 313:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return endGame; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return beginGame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return reset; });
 var repo, x, y, active;
 ;
 var listenersArr = [];
 var onPanel = true;
 var target = function () { return document.getElementById('container'); };
 var cn = function () { return document.getElementById('active-ct'); };
+var screen = function () { return document.getElementById('on-screen'); };
 var touchMove = function (event) {
     var screenHeight = document.getElementById('nb-target').scrollHeight;
     x = event.touches[0].pageX;
@@ -1244,7 +1278,6 @@ var touchMove = function (event) {
 var disableTouchMouse = function (event) {
     event.preventDefault();
 };
-var screen = function () { return document.getElementById('on-screen'); };
 var updateRepo = function () {
     return repo.getElements(function (col) { return col; });
 };
@@ -1258,11 +1291,10 @@ var end = function () {
     if (forRemove)
         forRemove.remove();
     var html = active.html, virt = active.virt;
-    var coreHtmlId = getCoreElements().find(function (e) { return e.el.name === virt.el.name; }).id;
+    var coreHtmlId = getCoreElements().find(function (e) { return e.el.getUniqName() === virt.el.getUniqName(); }).id;
     var coreHtml = document.getElementById(coreHtmlId);
     var width = html.scrollWidth / 2;
     var height = html.scrollHeight / 2;
-    onPanel;
     cn().removeChild(html);
     active = null;
     if (!onPanel) {
@@ -1279,29 +1311,35 @@ var end = function () {
     document.removeEventListener('touchmove', disableTouchMouse);
     listen();
 };
-var start = function (html, virt) {
+var start = function (event, html, virt) {
     document.addEventListener('touchmove', disableTouchMouse);
     var parent = html.parentElement;
     var onScreen = (parent.id === 'on-screen') ? true : false;
-    var coreHtmlId = getCoreElements().find(function (e) { return e.el.name === virt.el.name; }).id;
+    var coreHtmlId = getCoreElements().find(function (e) { return e.el.getUniqName() === virt.el.getUniqName(); }).id;
     var coreHtml = document.getElementById(coreHtmlId);
     if ((coreHtml.getAttribute('data-blocked') === 'true') && !onScreen) {
         return;
     }
     var clone = html.cloneNode();
+    x = event.touches[0].pageX;
+    y = event.touches[0].pageY;
+    var width = html.scrollWidth / 2;
+    var height = html.scrollHeight / 2;
     if (onScreen) {
         html.id = 'remove';
         html.setAttribute('style', 'display: none');
         clone.removeAttribute('style');
         repo.deleteElement(virt.id);
         listenersArr = listenersArr.filter(function (el) { return el !== virt.id; });
+        cn().setAttribute('style', "position: absolute; top: " + (y - height) + "px; left: " + (x - width) + "px");
     }
+    else {
+        cn().setAttribute('style', "position: absolute; top: " + (y - height) + "px; left: " + (x - width) + "px");
+    }
+    var activated = document.getElementById('activated');
+    if (activated)
+        activated.remove();
     clone.id = 'activated';
-    // x = event.touches[0].pageX;
-    // y = event.touches[0].pageY;
-    var width = html.scrollWidth / 2;
-    var height = html.scrollHeight / 2;
-    cn().setAttribute('style', "position: absolute; top: " + (y - height) + "px; left: " + (x - width) + "px");
     active = { html: clone, virt: virt };
     cn().appendChild(clone);
 };
@@ -1312,7 +1350,7 @@ var listen = function (cancel) {
     elements.forEach(function (virtElem) {
         var id = virtElem.id;
         var htmlElem = document.getElementById(id);
-        var listnerOnStart = function () { return start(htmlElem, virtElem); };
+        var listnerOnStart = function (ev) { return start(ev, htmlElem, virtElem); };
         if (cancel) {
             htmlElem.removeEventListener('touchstart', listnerOnStart);
             return;
@@ -1323,10 +1361,14 @@ var listen = function (cancel) {
         }
     });
 };
+var reset = function () {
+    listenersArr = [];
+    var elementsOnScreen = Array.from(screen().children);
+    elementsOnScreen.forEach(function (n) { return n.remove(); });
+    setTimeout(listen, 0);
+};
 var beginGame = function (repository) {
-    console.log('begin game');
     repo = repository;
-    console.log(repo);
     document.addEventListener('touchmove', touchMove);
     document.addEventListener('touchend', end);
     listen();
@@ -1343,5 +1385,5 @@ var endGame = function () {
 
 /***/ })
 
-},[210]);
+},[211]);
 //# sourceMappingURL=main.js.map

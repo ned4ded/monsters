@@ -7,12 +7,14 @@ const find = (element) => {
 @Injectable()
 export class ElementsRepository {
   public collection: {id: number, el: any, core: boolean}[] = [];
+  private lastId: number = 1;
 
   constructor() {
   }
 
   addElement(element, core: boolean = false): number {
-    const wrapped = {id: this.collection.length + 1, el: element, core };
+    this.lastId += 1;
+    const wrapped = {id: this.lastId, el: element, core };
     const collection = [...this.collection.slice(), wrapped];
     this.collection = collection;
     return wrapped.id;

@@ -37,12 +37,14 @@ export class StaticDataSource {
       name: 'alien',
       viewBox: [0, 0, 165.37, 302.36],
       initialScreenWidth: 150,
+      anchor: 1,
       figure: svgMonsters.alienTorso
     }),
     makeMonster({
       name: 'skeleton',
       viewBox: [0, 0, 200.62, 322.01],
       initialScreenWidth: 150,
+      anchor: 5,
       figure: svgMonsters.skeletonTorso
     }),
   ]
