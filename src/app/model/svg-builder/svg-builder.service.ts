@@ -23,4 +23,8 @@ export class SvgBuilder {
   public getName() {
     return this.root.getName();
   }
+
+  public getAnchor() {
+    return this.root.getAnchor();
+  }
 }

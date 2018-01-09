@@ -4,7 +4,7 @@
 <ion-content class="container">
   <div class="bg">
     <div class="list">
-        <img *ngFor="let monster of getMonsters()" (click)="beginGame(monster)" src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}">
+        <img *ngFor="let monster of getMonsters()" (click)="beginGame(monster)" src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}" id="{{monster.getName()}}">
     </div>
     <svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">
         <!-- 0 0 274.02 335.2 -->
@@ -32,12 +32,12 @@
           <rect x="269.77" y="261.5" width="4.24" height="12" />
           <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />
           <g>
-            <rect id="anchor-1" class="alien" x="71.83" y="4.181" width="0.001" height="1"></rect>
+            <rect id="anchor-1" class="alien" x="71.83" y="8.181" width="0.001" height="1"></rect>
             <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.001" height="1"></rect>
             <rect id="anchor-3" class="ghost" x="116.67" y="43.56" width="0.001" height="1"></rect>
             <rect id="anchor-4" class="mummy" x="30.86" y="100.151" width="0.001" height="1"></rect>
             <rect id="anchor-5" class="spider" x="240.048" y="112.218" width="0.001" height="1"></rect>
-            <rect id="anchor-6" class="skeleton" x="159.74" y="140.774" width="0.001" height="1"></rect>
+            <rect id="anchor-6" class="skeleton" x="153.74" y="134.574" width="0.001" height="1"></rect>
             <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.001" height="1"></rect>
             <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.001" height="1"></rect>
             <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.001" height="1"></rect>

@@ -119,7 +119,7 @@ var StaticDataSource = (function () {
                 name: 'skeleton',
                 viewBox: [0, 0, 200.62, 322.01],
                 initialScreenWidth: 150,
-                anchor: 5,
+                anchor: 6,
                 figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["b" /* skeletonTorso */]
             }),
         ];
@@ -442,6 +442,7 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__select_char_browser__ = __webpack_require__(315);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -455,11 +456,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var SelectCharPage = (function () {
     function SelectCharPage(navCtrl, repo) {
         this.navCtrl = navCtrl;
         this.repo = repo;
     }
+    SelectCharPage.prototype.ngAfterViewInit = function () {
+        Object(__WEBPACK_IMPORTED_MODULE_4__select_char_browser__["a" /* default */])(this.getMonsters());
+    };
     SelectCharPage.prototype.getMonsters = function () {
         return this.repo.getMonsters();
     };
@@ -468,12 +473,12 @@ var SelectCharPage = (function () {
     };
     SelectCharPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<!-- <ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header> -->\n<ion-content class="container">\n  <div class="bg">\n    <div class="list">\n        <img *ngFor="let monster of getMonsters()" (click)="beginGame(monster)" src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}">\n    </div>\n    <svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">\n        <!-- 0 0 274.02 335.2 -->\n          <rect x="85.42" y="75.81" width="131.4" height="258.09" />\n          <rect x="50.76" y="75.13" width="174.7" height="168.77" />\n          <rect class="cls-1" x="73.82" y="175.48" width="77.09" height="57.09" />\n          <rect class="cls-1" x="140.82" y="243.18" width="56.05" height="79.04" />\n          <polygon points="163 25.67 187.61 46.37 212.22 67.07 163 67.07 113.78 67.07 138.39 46.37 163 25.67" />\n          <polygon points="26.8 234.79 40.21 258.01 53.61 281.22 26.8 281.22 0 281.22 13.4 258.01 26.8 234.79" />\n          <polygon points="26.8 261.8 40.21 285.01 53.61 308.23 26.8 308.23 0 308.23 13.4 285.01 26.8 261.8" />\n          <polygon points="26.8 288.81 40.21 312.02 53.61 335.23 26.8 335.23 0 335.23 13.4 312.02 26.8 288.81" />\n          <ellipse cx="73.82" cy="27.19" rx="59.58" ry="15.53" />\n          <ellipse cx="73.82" cy="26.68" rx="32.87" ry="26.68" />\n          <circle class="cls-1" cx="36.49" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="51.42" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="66.36" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="96.23" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="111.16" cy="26.27" r="3.95" />\n          <rect x="132.5" y="65.79" width="116.11" height="12" />\n          <rect x="37.94" y="162.89" width="70" height="12" />\n          <rect x="186.61" y="213.5" width="70" height="12" />\n          <rect x="214.52" y="225.5" width="52.09" height="12" />\n          <rect x="206.61" y="237.5" width="67.41" height="12" />\n          <rect x="256.78" y="249.5" width="17.23" height="12" />\n          <rect x="269.77" y="261.5" width="4.24" height="12" />\n          <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />\n          <g>\n            <rect id="anchor-1" class="alien" x="71.83" y="4.181" width="0.001" height="1"></rect>\n            <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.001" height="1"></rect>\n            <rect id="anchor-3" class="ghost" x="116.67" y="43.56" width="0.001" height="1"></rect>\n            <rect id="anchor-4" class="mummy" x="30.86" y="100.151" width="0.001" height="1"></rect>\n            <rect id="anchor-5" class="spider" x="240.048" y="112.218" width="0.001" height="1"></rect>\n            <rect id="anchor-6" class="skeleton" x="159.74" y="140.774" width="0.001" height="1"></rect>\n            <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.001" height="1"></rect>\n            <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.001" height="1"></rect>\n            <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.001" height="1"></rect>\n            <rect id="anchor-10" class="yetti" x="100.726" y="269.867" width="0.001" height="1"></rect>\n            <rect id="anchor-11" class="dracula" x="168.399" y="255.942" width="0.001" height="1"></rect>\n            <rect id="anchor-12" class="zombie" x="218.407" y="261.786" width="0.001" height="1"></rect>\n          </g>\n      </svg>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
+            selector: 'select-char-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/'<!-- <ion-header>\n    <ion-navbar></ion-navbar>\n</ion-header> -->\n<ion-content class="container">\n  <div class="bg">\n    <div class="list">\n        <img *ngFor="let monster of getMonsters()" (click)="beginGame(monster)" src="assets/imgs/Monsters/{{monster.getName()}}.svg" alt="placholder" class="Monsters Monsters__{{monster.getName()}}" id="{{monster.getName()}}">\n    </div>\n    <svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">\n        <!-- 0 0 274.02 335.2 -->\n          <rect x="85.42" y="75.81" width="131.4" height="258.09" />\n          <rect x="50.76" y="75.13" width="174.7" height="168.77" />\n          <rect class="cls-1" x="73.82" y="175.48" width="77.09" height="57.09" />\n          <rect class="cls-1" x="140.82" y="243.18" width="56.05" height="79.04" />\n          <polygon points="163 25.67 187.61 46.37 212.22 67.07 163 67.07 113.78 67.07 138.39 46.37 163 25.67" />\n          <polygon points="26.8 234.79 40.21 258.01 53.61 281.22 26.8 281.22 0 281.22 13.4 258.01 26.8 234.79" />\n          <polygon points="26.8 261.8 40.21 285.01 53.61 308.23 26.8 308.23 0 308.23 13.4 285.01 26.8 261.8" />\n          <polygon points="26.8 288.81 40.21 312.02 53.61 335.23 26.8 335.23 0 335.23 13.4 312.02 26.8 288.81" />\n          <ellipse cx="73.82" cy="27.19" rx="59.58" ry="15.53" />\n          <ellipse cx="73.82" cy="26.68" rx="32.87" ry="26.68" />\n          <circle class="cls-1" cx="36.49" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="51.42" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="66.36" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="96.23" cy="26.27" r="3.95" />\n          <circle class="cls-1" cx="111.16" cy="26.27" r="3.95" />\n          <rect x="132.5" y="65.79" width="116.11" height="12" />\n          <rect x="37.94" y="162.89" width="70" height="12" />\n          <rect x="186.61" y="213.5" width="70" height="12" />\n          <rect x="214.52" y="225.5" width="52.09" height="12" />\n          <rect x="206.61" y="237.5" width="67.41" height="12" />\n          <rect x="256.78" y="249.5" width="17.23" height="12" />\n          <rect x="269.77" y="261.5" width="4.24" height="12" />\n          <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />\n          <g>\n            <rect id="anchor-1" class="alien" x="71.83" y="8.181" width="0.001" height="1"></rect>\n            <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.001" height="1"></rect>\n            <rect id="anchor-3" class="ghost" x="116.67" y="43.56" width="0.001" height="1"></rect>\n            <rect id="anchor-4" class="mummy" x="30.86" y="100.151" width="0.001" height="1"></rect>\n            <rect id="anchor-5" class="spider" x="240.048" y="112.218" width="0.001" height="1"></rect>\n            <rect id="anchor-6" class="skeleton" x="153.74" y="134.574" width="0.001" height="1"></rect>\n            <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.001" height="1"></rect>\n            <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.001" height="1"></rect>\n            <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.001" height="1"></rect>\n            <rect id="anchor-10" class="yetti" x="100.726" y="269.867" width="0.001" height="1"></rect>\n            <rect id="anchor-11" class="dracula" x="168.399" y="255.942" width="0.001" height="1"></rect>\n            <rect id="anchor-12" class="zombie" x="218.407" y="261.786" width="0.001" height="1"></rect>\n          </g>\n      </svg>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/select-char.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__["a" /* MonsterRepository */]) === "function" && _b || Object])
     ], SelectCharPage);
     return SelectCharPage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=select-char.js.map
@@ -755,6 +760,9 @@ var SvgBuilder = (function () {
     };
     SvgBuilder.prototype.getName = function () {
         return this.root.getName();
+    };
+    SvgBuilder.prototype.getAnchor = function () {
+        return this.root.getAnchor();
     };
     return SvgBuilder;
 }());
@@ -1382,6 +1390,24 @@ var endGame = function () {
 };
 
 //# sourceMappingURL=game.browser.js.map
+
+/***/ }),
+
+/***/ 315:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = (function (monsters) {
+    var elements = monsters.map(function (m) {
+        return { name: m.getName(), anchor: m.getAnchor() };
+    });
+    elements.forEach(function (e) {
+        var html = document.getElementById(e.name);
+        var pattern = (document.getElementById(e.anchor)).getBoundingClientRect();
+        html.setAttribute('style', "top: " + pattern.y + "px; left: " + pattern.x + "px");
+    });
+});;
+//# sourceMappingURL=select-char.browser.js.map
 
 /***/ })
 

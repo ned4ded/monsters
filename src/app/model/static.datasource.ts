@@ -44,7 +44,7 @@ export class StaticDataSource {
       name: 'skeleton',
       viewBox: [0, 0, 200.62, 322.01],
       initialScreenWidth: 150,
-      anchor: 5,
+      anchor: 6,
       figure: svgMonsters.skeletonTorso
     }),
   ]
