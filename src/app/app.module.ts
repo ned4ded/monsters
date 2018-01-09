@@ -11,7 +11,10 @@ import { ModelModule } from './model/model.module';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SelectCharPage } from '../pages/select-char/select-char';
+import BackgroundTabletComponent from '../pages/select-char/background/background-tablet.component';
+import BackgroundMobileComponent from '../pages/select-char/background/background-mobile.component';
 import { GamePage } from '../pages/game/game';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +22,8 @@ import { GamePage } from '../pages/game/game';
     HomePage,
     SelectCharPage,
     GamePage,
+    BackgroundMobileComponent,
+    BackgroundTabletComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,8 @@ import { GamePage } from '../pages/game/game';
     HomePage,
     SelectCharPage,
     GamePage,
+    BackgroundMobileComponent,
+    BackgroundTabletComponent
   ],
   providers: [
     StatusBar,

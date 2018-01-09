@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { Platform } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 import { MonsterRepository } from '../../app/model/monster.repository';
 import { GamePage } from '../game/game';
@@ -14,11 +15,15 @@ export class SelectCharPage implements AfterViewInit {
 
   constructor(
     public navCtrl: NavController,
-    private repo: MonsterRepository) {
-  }
+    private repo: MonsterRepository,
+    private platform: Platform) {}
 
   ngAfterViewInit() {
     disposeMonsters(this.getMonsters());
+  }
+
+  isIphone() {
+    return this.platform.is('iphone');
   }
 
   getMonsters(): SvgBuilder[] {

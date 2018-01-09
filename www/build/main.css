@@ -25972,12 +25972,20 @@ page-home .logo {
   height: 18.25%;
 }
 
+.mobile .Monsters__skeleton {
+  height: 13.6%;
+}
+
 .Monsters__skeleton-bgc {
   background-color: black;
 }
 
 .Monsters__alien {
   height: 19.38%;
+}
+
+.mobile .Monsters__alien {
+  height: 14.44%;
 }
 
 .Monsters__alien-bgc {
@@ -25994,14 +26002,15 @@ select-char-page .cls-1 {
 }
 
 select-char-page .bg {
+  border-top: 22px solid #001826;
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -1px;
+  top: 1px;
+  overflow: hidden;
 }
 
 select-char-page .bg__content {
-  margin-bottom: -6px;
   width: 100%;
   height: 100%;
 }

@@ -5,8 +5,11 @@ export default (monsters: any[]) => {
 
   elements.forEach(e => {
     const html = document.getElementById(e.name);
-    const pattern = (document.getElementById(e.anchor)).getBoundingClientRect();
+    const anchor = document.getElementById(e.anchor);
+    const pattern = anchor.getBoundingClientRect();
 
-    html.setAttribute('style', `top: ${pattern.y}px; left: ${pattern.x}px`);
+    if(!html) return;
+
+    html.setAttribute('style', `top: ${pattern.top}px; left: ${pattern.left}px`);
   });
 }
