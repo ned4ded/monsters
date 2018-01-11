@@ -1,10 +1,6 @@
-import { ElementsRepository } from '../../app/model/elements.repository';
-
 var repo, x, y, active;;
 var listenersArr = [];
 var onPanel = true;
-
-const target = () => document.getElementById('container');
 
 const cn = () => document.getElementById('active-ct');
 

@@ -6,55 +6,45 @@
   z-index: 10;
 
   &__mummy {
-    height: 200.968px * $ratio; //200.968px
-    &-bgc {
-      background-color: rgb(63, 39, 33);
+    height: 16.868%; //200.968px
+    .mobile & {
+      height: 14.47%;
     }
   }
 
-  &__vampire {
-    height: 220.673px * 0.424; //220.673px
-    &-bgc {
-      background-color: rgb(59, 69, 126);
+  &__dracula {
+    height: 25.286%; //220.673px
+    .mobile & {
+      height: 15.4%;
     }
   }
 
   &__spider {
-    height: 104.901px * 0.424; //104.901px
-    &-bgc {
-      background-color: rgb(241, 234, 53);
+    height: 22.103%; //104.901px
+    .mobile & {
+      height: 13.462%;
     }
   }
 
   &__ghost {
-    height: 200.7px * 0.424; //200.7px
-    &-bgc {
-      background-color: rgb(0, 0, 0);
+    transform: rotate(30deg);
+    height: 22.666%; //200.7px
+    .mobile & {
+      height: 13.816%;
     }
   }
 
   &__skeleton {
+    height: 18.25%;
     .mobile & {
       height: 13.6%;
-    }
-
-    height: 18.25%;
-    // height: 222.792px * 0.424; //222.792px
-    &-bgc {
-      background-color: rgb(0, 0, 0);
     }
   }
 
   &__alien {
     height: 19.38%;
-
     .mobile & {
       height: 14.44%;
     }
-    // height: 218.464px * 0.424; //218.464px
-    &-bgc {
-      background-color: rgb(0, 0, 0);
-    }
   }
-
 }

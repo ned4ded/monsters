@@ -1,7 +1,6 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
-import { MonsterRepository } from '../../app/model/monster.repository';
 import { GameItem } from '../../app/model/game-item.model';
 import { GameItemRepository } from '../../app/model/game-item.repository';
 import { SvgBuilder } from '../../app/model/svg-builder/svg-builder.service';
@@ -22,7 +21,6 @@ export class GamePage implements OnInit {
     public navCtrl: NavController,
     public params: NavParams,
     private gameItemRepo: GameItemRepository,
-    private monsterRepo: MonsterRepository,
     private elemRepo: ElementsRepository,
   ) {
     this.monster = params.get('monster');

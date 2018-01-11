@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.37 107.18"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3.22px;}.cls-2{fill:#058d5a;}.cls-3{fill:#231300;}.cls-4{fill:#fff;}</style></defs><title>Asset 5</title><g id="Layer_2" data-name="Layer 2"><g id="Слой_1" data-name="Слой 1"><polyline class="cls-1" points="1.14 63.55 20.34 44.34 39.54 63.55"/><polyline class="cls-1" points="1.14 75.01 20.34 55.81 39.54 75.01"/><polyline class="cls-1" points="1.14 86.47 20.34 67.27 39.54 86.47"/><polyline class="cls-1" points="91.82 63.55 111.03 44.34 130.23 63.55"/><polyline class="cls-1" points="91.82 75.01 111.03 55.81 130.23 75.01"/><polyline class="cls-1" points="91.82 86.47 111.03 67.27 130.23 86.47"/><ellipse class="cls-2" cx="65.68" cy="80.11" rx="29.63" ry="19.08"/><ellipse cx="65.68" cy="60.11" rx="29.63" ry="19.08"/><ellipse class="cls-2" cx="65.68" cy="41.78" rx="29.63" ry="19.08"/><ellipse cx="65.68" cy="22.45" rx="29.63" ry="19.08"/><circle class="cls-2" cx="56.84" cy="17.95" r="7.16"/><circle class="cls-3" cx="56.84" cy="17.95" r="3.93"/><circle class="cls-2" cx="74.53" cy="17.95" r="7.16"/><circle class="cls-3" cx="74.53" cy="17.95" r="3.93"/><polyline class="cls-1" points="19.36 16.06 33.14 2.28 46.92 16.06"/><polyline class="cls-1" points="19.36 24.29 33.14 10.5 46.92 24.29"/><polyline class="cls-1" points="19.36 32.51 33.14 18.73 46.92 32.51"/><polyline class="cls-1" points="84.45 16.06 98.23 2.28 112.01 16.06"/><polyline class="cls-1" points="84.45 24.29 98.23 10.5 112.01 24.29"/><polyline class="cls-1" points="84.45 32.51 98.23 18.73 112.01 32.51"/><polygon class="cls-4" points="62.67 34.51 61.38 26.65 63.97 26.65 62.67 34.51"/><polygon class="cls-4" points="68.28 34.51 66.98 26.65 69.58 26.65 68.28 34.51"/><polygon class="cls-4" points="57.68 74.18 56.38 66.31 58.97 66.31 57.68 74.18"/><polygon class="cls-4" points="63.28 74.18 61.98 66.31 64.58 66.31 63.28 74.18"/><polygon class="cls-4" points="68.68 74.18 67.38 66.31 69.97 66.31 68.68 74.18"/><polygon class="cls-4" points="74.28 74.18 72.98 66.31 75.58 66.31 74.28 74.18"/><polygon points="64.94 107.18 63.65 99.31 66.24 99.31 64.94 107.18"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.59 64.05">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+      .cls-1 {
+        stroke-width: 0.5px;
+      }
+      .cls-2 {
+        stroke-width: 0.75px;
+      }
+      .cls-3 {
+        fill: #058d5a;
+      }
+      .cls-4 {
+        fill: #000;
+      }
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Слой_2" data-name="Слой 2"><line class="cls-1" x1="15.09" x2="15.09" y2="40.04"/><polyline class="cls-2" points="0.27 53.89 4.74 49.42 9.21 53.89"/><polyline class="cls-2" points="0.27 56.56 4.74 52.09 9.21 56.56"/><polyline class="cls-2" points="0.27 59.23 4.74 54.76 9.21 59.23"/><polyline class="cls-2" points="21.38 53.89 25.85 49.42 30.32 53.89"/><polyline class="cls-2" points="21.38 56.56 25.85 52.09 30.32 56.56"/><polyline class="cls-2" points="21.38 59.23 25.85 54.76 30.32 59.23"/><ellipse class="cls-3" cx="15.29" cy="57.75" rx="6.9" ry="4.44"/><ellipse cx="15.29" cy="53.09" rx="6.9" ry="4.44"/><ellipse class="cls-3" cx="15.29" cy="48.82" rx="6.9" ry="4.44"/><ellipse cx="15.29" cy="44.32" rx="6.9" ry="4.44"/><circle class="cls-3" cx="13.24" cy="43.27" r="1.67"/><circle class="cls-4" cx="13.24" cy="43.27" r="0.92"/><circle class="cls-3" cx="17.35" cy="43.27" r="1.67"/><circle class="cls-4" cx="17.35" cy="43.27" r="0.92"/><polyline class="cls-2" points="4.51 42.83 7.72 39.62 10.93 42.83"/><polyline class="cls-2" points="4.51 44.75 7.72 41.54 10.93 44.75"/><polyline class="cls-2" points="4.51 46.66 7.72 43.45 10.93 46.66"/><polyline class="cls-2" points="19.66 42.83 22.87 39.62 26.08 42.83"/><polyline class="cls-2" points="19.66 44.75 22.87 41.54 26.08 44.75"/><polyline class="cls-2" points="19.66 46.66 22.87 43.45 26.08 46.66"/><polygon class="cls-5" points="14.59 47.13 14.29 45.3 14.9 45.3 14.59 47.13"/><polygon class="cls-5" points="15.9 47.13 15.6 45.3 16.2 45.3 15.9 47.13"/><polygon class="cls-5" points="13.43 56.36 13.13 54.53 13.73 54.53 13.43 56.36"/><polygon class="cls-5" points="14.73 56.36 14.43 54.53 15.04 54.53 14.73 56.36"/><polygon class="cls-5" points="15.99 56.36 15.69 54.53 16.29 54.53 15.99 56.36"/><polygon class="cls-5" points="17.3 56.36 16.99 54.53 17.6 54.53 17.3 56.36"/><polygon points="15.12 64.05 14.82 62.22 15.43 62.22 15.12 64.05"/></g>
+  </g>
+</svg>

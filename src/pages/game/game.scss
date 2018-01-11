@@ -68,6 +68,132 @@ game-page {
     }
   }
 
+  .mummy {
+    &__screen {
+      background-color: #3f2721;
+    }
+
+    & .head--figure {
+      fill: #fff;
+    }
+
+    & .ear {
+      fill: #b48d69;
+    }
+
+    & .head-part {
+      fill: #ffd7a5;
+
+      &--dark {
+        fill: #e1b285;
+      }
+
+      &--empty {
+        fill: #000;
+      }
+    }
+
+    & .body-part {
+      fill: #ffd7a5;
+
+      &--dark {
+        fill: #e1b285;
+      }
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .eyeball {
+      fill: #f24943;
+    }
+
+    & .decor {
+      &__bandage {
+        fill: #e1b285;
+      }
+    }
+  }
+
+  .ghost {
+    &__screen {
+      background-color: #000;
+    }
+
+    & .body {
+      fill: #b7e3ee;
+    }
+
+    & .eyeball {
+      fill: #fff;
+    }
+
+    & .ubula {
+      fill: #f24943;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .mouth {
+      clip-path: url(#mouth-clip-path);
+    }
+  }
+
+  .spider {
+    &__screen {
+      background-color: #f1ea35;
+    }
+
+    & .eyeball {
+      fill: #058d5a;
+    }
+
+    & .body-part--colored {
+      fill: #058d5a;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+  }
+
+  .dracula {
+    &__screen {
+      background-color: #3b457e;
+    }
+
+    & .face {
+      fill: #cf6cac;
+    }
+
+    & .ear {
+      fill: #cf6cac;
+    }
+
+    & .nose {
+      fill: #9a5790;
+    }
+
+    & .nose {
+      fill: #9a5790;
+    }
+
+    & .tooth {
+      fill: #fff;
+    }
+
+    & .mouth-figure {
+      fill: #8a4242;
+    }
+
+    & .blood {
+      fill: #f24943;
+    }
+  }
+
   .container {
     position: fixed;
     display: flex;

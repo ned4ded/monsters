@@ -1,4 +1,4 @@
-import { make, group } from '../../svg-constructor.library';
+import { group } from '../../svg-constructor.library';
 
 import eyeRight from './eye-right';
 import eyeLeft from './eye-left';

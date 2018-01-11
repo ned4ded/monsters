@@ -25766,6 +25766,123 @@ game-page .skeleton .pupil {
   fill: #f24942;
 }
 
+game-page .mummy__screen {
+  background-color: #3f2721;
+}
+
+game-page .mummy .head--figure {
+  fill: #fff;
+}
+
+game-page .mummy .ear {
+  fill: #b48d69;
+}
+
+game-page .mummy .head-part {
+  fill: #ffd7a5;
+}
+
+game-page .mummy .head-part--dark {
+  fill: #e1b285;
+}
+
+game-page .mummy .head-part--empty {
+  fill: #000;
+}
+
+game-page .mummy .body-part {
+  fill: #ffd7a5;
+}
+
+game-page .mummy .body-part--dark {
+  fill: #e1b285;
+}
+
+game-page .mummy .tooth {
+  fill: #fff;
+}
+
+game-page .mummy .eyeball {
+  fill: #f24943;
+}
+
+game-page .mummy .decor__bandage {
+  fill: #e1b285;
+}
+
+game-page .ghost__screen {
+  background-color: #000;
+}
+
+game-page .ghost .body {
+  fill: #b7e3ee;
+}
+
+game-page .ghost .eyeball {
+  fill: #fff;
+}
+
+game-page .ghost .ubula {
+  fill: #f24943;
+}
+
+game-page .ghost .tooth {
+  fill: #fff;
+}
+
+game-page .ghost .mouth {
+  -webkit-clip-path: url(#mouth-clip-path);
+  clip-path: url(#mouth-clip-path);
+}
+
+game-page .spider__screen {
+  background-color: #f1ea35;
+}
+
+game-page .spider .eyeball {
+  fill: #058d5a;
+}
+
+game-page .spider .body-part--colored {
+  fill: #058d5a;
+}
+
+game-page .spider .tooth {
+  fill: #fff;
+}
+
+game-page .dracula__screen {
+  background-color: #3b457e;
+}
+
+game-page .dracula .face {
+  fill: #cf6cac;
+}
+
+game-page .dracula .ear {
+  fill: #cf6cac;
+}
+
+game-page .dracula .nose {
+  fill: #9a5790;
+}
+
+game-page .dracula .nose {
+  fill: #9a5790;
+}
+
+game-page .dracula .tooth {
+  fill: #fff;
+}
+
+game-page .dracula .mouth-figure {
+  fill: #8a4242;
+}
+
+game-page .dracula .blood {
+  fill: #f24943;
+}
+
 game-page .container {
   position: fixed;
   display: -webkit-box;
@@ -25937,35 +26054,37 @@ page-home .logo {
 }
 
 .Monsters__mummy {
-  height: 85.21043px;
+  height: 16.868%;
 }
 
-.Monsters__mummy-bgc {
-  background-color: #3f2721;
+.mobile .Monsters__mummy {
+  height: 14.47%;
 }
 
-.Monsters__vampire {
-  height: 93.56535px;
+.Monsters__dracula {
+  height: 25.286%;
 }
 
-.Monsters__vampire-bgc {
-  background-color: #3b457e;
+.mobile .Monsters__dracula {
+  height: 15.4%;
 }
 
 .Monsters__spider {
-  height: 44.47802px;
+  height: 22.103%;
 }
 
-.Monsters__spider-bgc {
-  background-color: #f1ea35;
+.mobile .Monsters__spider {
+  height: 13.462%;
 }
 
 .Monsters__ghost {
-  height: 85.0968px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  height: 22.666%;
 }
 
-.Monsters__ghost-bgc {
-  background-color: black;
+.mobile .Monsters__ghost {
+  height: 13.816%;
 }
 
 .Monsters__skeleton {
@@ -25976,10 +26095,6 @@ page-home .logo {
   height: 13.6%;
 }
 
-.Monsters__skeleton-bgc {
-  background-color: black;
-}
-
 .Monsters__alien {
   height: 19.38%;
 }
@@ -25988,12 +26103,7 @@ page-home .logo {
   height: 14.44%;
 }
 
-.Monsters__alien-bgc {
-  background-color: black;
-}
-
 select-char-page .container {
-  position: relative;
   background-color: #003d4e;
 }
 
@@ -26006,7 +26116,7 @@ select-char-page .bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 1px;
+  top: 0;
   overflow: hidden;
 }
 

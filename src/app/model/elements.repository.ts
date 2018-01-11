@@ -1,9 +1,5 @@
 import { Injectable } from "@angular/core";
 
-const find = (element) => {
-
-}
-
 @Injectable()
 export class ElementsRepository {
   public collection: {id: number, el: any, core: boolean}[] = [];
