@@ -25742,6 +25742,42 @@ game-page .alien .body--figure {
   fill: #6fc055;
 }
 
+game-page .yaga {
+  right: 0;
+}
+
+game-page .yaga__screen {
+  background-color: #72538e;
+}
+
+game-page .yaga .body-figure {
+  fill: #20654d;
+}
+
+game-page .yaga .ornament-part {
+  fill: #f24943;
+}
+
+game-page .yaga .mouth-figure {
+  fill: #f24943;
+}
+
+game-page .yaga .tooth {
+  fill: #fff;
+}
+
+game-page .yaga .face {
+  fill: #00b15d;
+}
+
+game-page .yaga .eyeball {
+  fill: #fff;
+}
+
+game-page .yaga .nose {
+  fill: #20654d;
+}
+
 game-page .skeleton__screen {
   background-color: black;
 }
@@ -25810,6 +25846,40 @@ game-page .mummy .decor__bandage {
   fill: #e1b285;
 }
 
+game-page .spider {
+  top: 0;
+}
+
+game-page .spider__screen {
+  background-color: #f1ea35;
+}
+
+game-page .spider .leg {
+  stroke-width: 8.05px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+game-page .spider .web {
+  stroke-width: 2.5px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+game-page .spider .eyeball {
+  fill: #058d5a;
+}
+
+game-page .spider .body-part--colored {
+  fill: #058d5a;
+}
+
+game-page .spider .tooth {
+  fill: #fff;
+}
+
 game-page .ghost__screen {
   background-color: #000;
 }
@@ -25835,19 +25905,169 @@ game-page .ghost .mouth {
   clip-path: url(#mouth-clip-path);
 }
 
-game-page .spider__screen {
-  background-color: #f1ea35;
+game-page .doctor__screen {
+  background-color: #f24943;
 }
 
-game-page .spider .eyeball {
-  fill: #058d5a;
+game-page .doctor .body {
+  fill: #fff;
 }
 
-game-page .spider .body-part--colored {
-  fill: #058d5a;
+game-page .doctor .hat {
+  fill: #fff;
 }
 
-game-page .spider .tooth {
+game-page .doctor .head-figure {
+  fill: #f7decb;
+}
+
+game-page .doctor .ear {
+  fill: #f7decb;
+}
+
+game-page .doctor .nose {
+  fill: #ebba96;
+}
+
+game-page .doctor .mouth-figure {
+  fill: #f24943;
+}
+
+game-page .doctor .tooth {
+  fill: #fff;
+}
+
+game-page .doctor .cross {
+  fill: #f24943;
+}
+
+game-page .doctor .eye {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+game-page .doctor .eye--left {
+  stroke-width: 3.27px;
+}
+
+game-page .doctor .eye--right {
+  stroke-width: 6.03px;
+}
+
+game-page .bed {
+  bottom: 5%;
+  right: 0;
+}
+
+game-page .bed__screen {
+  background-color: #003d4e;
+}
+
+game-page .bed .pillow {
+  fill: #fff;
+}
+
+game-page .bed .mattress {
+  fill: #fff;
+}
+
+game-page .bed .eyeball {
+  fill: #fff;
+}
+
+game-page .bed .pupil {
+  fill: #f24943;
+}
+
+game-page .bed .beam {
+  fill: #9a9b9b;
+}
+
+game-page .bed .knob {
+  fill: #9a9b9b;
+}
+
+game-page .bed .blanket {
+  fill: #00bcc5;
+}
+
+game-page .wolf {
+  left: 0;
+}
+
+game-page .wolf__screen {
+  background-color: #4eb959;
+}
+
+game-page .wolf .body {
+  fill: #666;
+}
+
+game-page .wolf .tongue {
+  fill: #f24942;
+}
+
+game-page .wolf .jaw {
+  fill: #666;
+}
+
+game-page .wolf .cheek {
+  fill: #666;
+}
+
+game-page .wolf .saliva {
+  fill: #80b7e5;
+}
+
+game-page .wolf .snout {
+  fill: #666;
+}
+
+game-page .wolf .face {
+  fill: #666;
+}
+
+game-page .wolf .ear {
+  fill: #666;
+}
+
+game-page .wolf .eyeball-part {
+  fill: #f1ea35;
+}
+
+game-page .yeti__screen {
+  background-color: #fff;
+}
+
+game-page .yeti .body {
+  fill: #cdcdcd;
+}
+
+game-page .yeti .hair {
+  fill: #9a9b9b;
+}
+
+game-page .yeti .face {
+  fill: #cdcdcd;
+}
+
+game-page .yeti .nose {
+  fill: #9a9b9b;
+}
+
+game-page .yeti .ear {
+  fill: #cdcdcd;
+}
+
+game-page .yeti .jaw {
+  fill: #cdcdcd;
+}
+
+game-page .yeti .lips {
+  fill: #f24943;
+}
+
+game-page .yeti .tooth {
   fill: #fff;
 }
 
@@ -25881,6 +26101,37 @@ game-page .dracula .mouth-figure {
 
 game-page .dracula .blood {
   fill: #f24943;
+}
+
+game-page .zombie {
+  right: 0;
+}
+
+game-page .zombie__screen {
+  background-color: #f46540;
+}
+
+game-page .zombie .body {
+  fill: #cdcdcd;
+}
+
+game-page .zombie .face {
+  fill: #00ad5e;
+}
+
+game-page .zombie .nose {
+  fill: #20654d;
+}
+
+game-page .zombie .pupil {
+  fill: #f24943;
+}
+
+game-page .zombie .steam-part {
+  stroke-width: 2.63px;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  fill: none;
 }
 
 game-page .container {
@@ -26007,6 +26258,11 @@ game-page .panel__item {
   margin: 0 10px;
 }
 
+game-page .panel__item--fraud {
+  width: 10px;
+  height: 100%;
+}
+
 game-page .panel__doubled + .panel__doubled {
   margin-left: -7px;
 }
@@ -26048,29 +26304,46 @@ page-home .logo {
 }
 
 .Monsters {
-  height: 150px;
   position: absolute;
   z-index: 10;
 }
 
+.Monsters__alien {
+  height: 19.38%;
+}
+
+.mobile .Monsters__alien {
+  height: 14.443%;
+}
+
+.Monsters__yaga {
+  height: 20.805%;
+  -webkit-transform: rotate(-20grad);
+  transform: rotate(-20grad);
+}
+
+.mobile .Monsters__yaga {
+  height: 15.518%;
+}
+
+.Monsters__skeleton {
+  height: 18.251%;
+}
+
+.mobile .Monsters__skeleton {
+  height: 13.602%;
+}
+
 .Monsters__mummy {
-  height: 16.868%;
+  height: 19.425%;
 }
 
 .mobile .Monsters__mummy {
-  height: 14.47%;
-}
-
-.Monsters__dracula {
-  height: 25.286%;
-}
-
-.mobile .Monsters__dracula {
-  height: 15.4%;
+  height: 14.476%;
 }
 
 .Monsters__spider {
-  height: 22.103%;
+  height: 18.063%;
 }
 
 .mobile .Monsters__spider {
@@ -26080,27 +26353,59 @@ page-home .logo {
 .Monsters__ghost {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
-  height: 22.666%;
+  height: 18.523%;
 }
 
 .mobile .Monsters__ghost {
   height: 13.816%;
 }
 
-.Monsters__skeleton {
-  height: 18.25%;
+.Monsters__doctor {
+  height: 21.549%;
 }
 
-.mobile .Monsters__skeleton {
-  height: 13.6%;
+.mobile .Monsters__doctor {
+  height: 16.06%;
 }
 
-.Monsters__alien {
-  height: 19.38%;
+.Monsters__bed {
+  height: 13.694%;
 }
 
-.mobile .Monsters__alien {
-  height: 14.44%;
+.mobile .Monsters__bed {
+  height: 10.2%;
+}
+
+.Monsters__wolf {
+  height: 12.439%;
+}
+
+.mobile .Monsters__wolf {
+  height: 9.271%;
+}
+
+.Monsters__yeti {
+  height: 19.951%;
+}
+
+.mobile .Monsters__yeti {
+  height: 14.868%;
+}
+
+.Monsters__dracula {
+  height: 21%;
+}
+
+.mobile .Monsters__dracula {
+  height: 15.4%;
+}
+
+.Monsters__zombie {
+  height: 22.09%;
+}
+
+.mobile .Monsters__zombie {
+  height: 16.463%;
 }
 
 select-char-page .container {

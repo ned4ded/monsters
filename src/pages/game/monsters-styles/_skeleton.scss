@@ -1,0 +1,25 @@
+.skeleton {
+  &__screen {
+    background-color: black;
+  }
+
+  & .head--figure {
+    fill: #fff;
+  }
+
+  & .jaw {
+    fill: #fff;
+  }
+
+  & .tooth {
+    fill: #000;
+  }
+
+  & .rib {
+    fill: #fff;
+  }
+
+  & .pupil {
+    fill: #f24942;
+  }
+}

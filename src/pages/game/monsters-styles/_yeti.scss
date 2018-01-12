@@ -1,0 +1,37 @@
+.yeti {
+  &__screen {
+    background-color: #fff;
+  }
+
+  & .body {
+    fill: #cdcdcd;
+  }
+
+  & .hair {
+    fill: #9a9b9b;
+  }
+
+  & .face {
+    fill: #cdcdcd;
+  }
+
+  & .nose {
+    fill: #9a9b9b;
+  }
+
+  & .ear {
+    fill: #cdcdcd;
+  }
+
+  & .jaw {
+    fill: #cdcdcd;
+  }
+
+  & .lips {
+    fill: #f24943;
+  }
+
+  & .tooth {
+    fill: #fff;
+  }
+}

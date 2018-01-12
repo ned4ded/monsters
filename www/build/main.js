@@ -1,8 +1,6 @@
 webpackJsonp([0],[
 /* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64,6 +62,8 @@ var build = function (node) {
 //# sourceMappingURL=svg-constructor.library.js.map
 
 /***/ }),
+/* 2 */,
+/* 3 */,
 /* 4 */,
 /* 5 */,
 /* 6 */,
@@ -201,6 +201,14 @@ var StaticDataSource = (function () {
             new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](4, 'eyes', 178.063, 42.556),
             new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](5, 'lips', 98.471, 69.73),
             new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](6, 'love-glasses', 296.347, 103.926),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](7, 'brown-rounds', 55.862, 63.793),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](8, 'cersents', 108.54, 31.939),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](9, 'gas', 149.963, 95.229),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](10, 'lolipop', 61.209, 177.135),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](11, 'pink-rounds', 153.808, 58.49),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](12, 'slime', 32.491, 121.166),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](13, 'spines', 112.4, 76.668),
+            new __WEBPACK_IMPORTED_MODULE_3__game_item_model__["a" /* GameItem */](14, 'tress', 42.417, 189.579),
         ];
         this.monsters = [
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
@@ -214,8 +222,10 @@ var StaticDataSource = (function () {
                 name: 'skeleton',
                 viewBox: [0, 0, 200.62, 322.01],
                 initialScreenWidth: 150,
+                height: '90%',
+                width: 'auto',
                 anchor: 6,
-                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["e" /* skeletonTorso */]
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["g" /* skeletonTorso */]
             }),
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
                 name: 'mummy',
@@ -224,28 +234,88 @@ var StaticDataSource = (function () {
                 anchor: 4,
                 width: '100%',
                 height: '100%',
-                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["d" /* mummyTorso */]
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["f" /* mummyTorso */]
             }),
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
                 name: 'dracula',
                 viewBox: [0, 0, 206.58, 334.71],
                 initialScreenWidth: 150,
                 anchor: 11,
-                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["b" /* draculaTorso */]
+                height: '95%',
+                width: 'auto',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["d" /* draculaTorso */]
             }),
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
                 name: 'spider',
                 viewBox: [0, 0, 264.89, 327.08],
                 initialScreenWidth: 150,
                 anchor: 5,
-                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["f" /* spiderTorso */]
+                height: 'auto',
+                width: '100%',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["h" /* spiderTorso */]
             }),
             Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
                 name: 'ghost',
                 viewBox: [0, 0, 245.74, 325.76],
                 initialScreenWidth: 150,
                 anchor: 3,
-                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["c" /* ghostTorso */]
+                height: '90%',
+                width: '100%',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["e" /* ghostTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'bed',
+                viewBox: [0, 0, 248.5, 315.64],
+                initialScreenWidth: 150,
+                anchor: 8,
+                width: '90%',
+                height: 'auto',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["b" /* bedTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'wolf',
+                viewBox: [0, 0, 264.56, 322.51],
+                initialScreenWidth: 150,
+                anchor: 9,
+                width: '90%',
+                height: 'auto',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["i" /* wolfTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'yeti',
+                viewBox: [0, 0, 264.56, 322.51],
+                initialScreenWidth: 150,
+                anchor: 10,
+                width: '100%',
+                height: '90%',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["k" /* yetiTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'zombie',
+                viewBox: [0, 0, 233.58, 324.24],
+                initialScreenWidth: 150,
+                anchor: 12,
+                width: 'auto',
+                height: '95%',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["l" /* zombieTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'doctor',
+                viewBox: [0, 0, 150.13, 337.94],
+                initialScreenWidth: 150,
+                anchor: 7,
+                height: '96%',
+                width: 'auto',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["c" /* doctorTorso */]
+            }),
+            Object(__WEBPACK_IMPORTED_MODULE_4__svg_builder_monster_constructor__["a" /* default */])({
+                name: 'yaga',
+                viewBox: [0, 0, 233.58, 324.24],
+                initialScreenWidth: 150,
+                anchor: 2,
+                height: '95%',
+                width: 'auto',
+                figure: __WEBPACK_IMPORTED_MODULE_5__svg_builder_svg_sprite_monsters_datasource__["j" /* yagaTorso */]
             }),
         ];
     }
@@ -651,7 +721,7 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_monster_repository__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__game_game__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__select_char_browser__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__select_char_browser__ = __webpack_require__(376);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -709,7 +779,7 @@ var SelectCharPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_model_game_item_model__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_model_game_item_repository__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_model_elements_repository__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__game_browser__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__game_browser__ = __webpack_require__(375);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -776,7 +846,7 @@ var GamePage = (function () {
     };
     GamePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen {{monster.getName()}}__screen">\n      <div id="on-screen">\n\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? \' panel__doubled\' : \'\'}}">\n            <img\n            id="{{item.id}}"\n            src="assets/imgs/GameItems/{{item.el.name}}.svg"\n            alt="image of {{item.el.name}}"\n            data-blocked="false"\n            class="GameItem\n                  {{item.el.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.el.name}}">\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
+            selector: 'game-page',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/'<ion-content fixed no-bounce>\n  <div id="container" class="container">\n    <div id="nb-target" class="screen {{monster.getName()}}__screen">\n      <div id="on-screen">\n\n      </div>\n      <button ion-button icon-only outline class="btn-close" (click)="endGame()">\n        <ion-icon name="close" class="icon-close"></ion-icon>\n      </button>\n\n      <button ion-button icon-only outline class="btn-reset" (click)="reset()">\n        <ion-icon name="refresh" class="icon-reset"></ion-icon>\n      </button>\n    </div>\n    <div id="panel" class="panel-container">\n      <ul class="panel">\n        <li *ngFor="let item of getItems()" class="panel__item{{item.el.doubled ? \' panel__doubled\' : \'\'}}">\n            <img\n            id="{{item.id}}"\n            src="assets/imgs/GameItems/{{item.el.name}}.svg"\n            alt="image of {{item.el.name}}"\n            data-blocked="false"\n            class="GameItem\n                  {{item.el.vertical? \'GameItem--vertical\' : \'\'}}\n                  GameItem__{{item.el.name}}">\n        </li>\n        <li class="panel__item panel__item--fraud">\n\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div id="active-ct"></div>\n</ion-content>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/game/game.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
@@ -832,11 +902,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_screen_orientation__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__model_model_module__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(374);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_select_char_select_char__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_char_background_background_tablet_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_select_char_background_background_mobile_component__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_select_char_background_background_tablet_component__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_select_char_background_background_mobile_component__ = __webpack_require__(378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_game_game__ = __webpack_require__(210);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1031,7 +1101,7 @@ var ModelModule = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvgBuilder; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var SvgBuilder = (function () {
     function SvgBuilder(_a) {
@@ -1213,12 +1283,30 @@ var RootMetaModel = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dracula_torso_dracula__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spider_torso_spider__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ghost_torso_ghost__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bed_torso_bed__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__wolf_torso_wolf__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__yeti_torso_yeti__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__zombie_torso_zombie__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__doctor_torso_doctor__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__yaga_torso_yaga__ = __webpack_require__(369);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__alien_torso_alien__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__skeleton_torso_skeleton__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__mummy_torso_mummy__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__dracula_torso_dracula__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_4__spider_torso_spider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_5__ghost_torso_ghost__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_1__skeleton_torso_skeleton__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_2__mummy_torso_mummy__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__dracula_torso_dracula__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_4__spider_torso_spider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_5__ghost_torso_ghost__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__bed_torso_bed__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_7__wolf_torso_wolf__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_8__yeti_torso_yeti__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_9__zombie_torso_zombie__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_10__doctor_torso_doctor__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_11__yaga_torso_yaga__["a"]; });
+
+
+
+
+
+
 
 
 
@@ -1233,7 +1321,7 @@ var RootMetaModel = (function (_super) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(296);
 // Entities
 
@@ -1248,7 +1336,7 @@ var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__content__ = __webpack_require__(297);
 
 
@@ -1261,7 +1349,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(302);
@@ -1277,7 +1365,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var mouth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('mouth', 'M82.66,131.54a2.83,2.83,0,0,1-2.45-1.41l-3.15-5.45a2.83,2.83,0,0,1,2.45-4.24h6.29a2.83,2.83,0,0,1,2.45,4.24l-3.15,5.45A2.83,2.83,0,0,1,82.66,131.54Z');
 /* harmony default export */ __webpack_exports__["a"] = (mouth);
@@ -1288,7 +1376,7 @@ var mouth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(301);
 
@@ -1302,7 +1390,7 @@ var mouth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M25.19,26.89A52.14,52.14,0,0,0,77.36,79.06,52.14,52.14,0,0,0,25.19,26.89Z');
 var iris = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('iris', 51.86, 53.61, 15.32);
@@ -1315,7 +1403,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M140.14,26.89A52.14,52.14,0,0,0,88,79.06,52.14,52.14,0,0,0,140.14,26.89Z');
 var iris = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('iris', 113.53, 53.61, 15.32);
@@ -1328,7 +1416,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var nostrillLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'nostril', mod: 'left' }, 76.75, 99.18, 2.49);
 var nostrillRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'nostril', mod: 'right' }, 88.6, 99.18, 2.49);
@@ -1340,7 +1428,7 @@ var nostrillRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__body__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__head__ = __webpack_require__(305);
 
@@ -1354,7 +1442,7 @@ var nostrillRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var ribOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('rib', 0, 227.64, 200.62, 21.55);
 var ribTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('rib', 0, 264.11, 200.62, 21.55);
@@ -1367,7 +1455,7 @@ var ribThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eyes__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(309);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jaws__ = __webpack_require__(310);
@@ -1385,7 +1473,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_right__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_left__ = __webpack_require__(308);
 
@@ -1399,7 +1487,7 @@ var head = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 129.44, 66.37, 25.31);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 136.88, 58.14, 10.09);
@@ -1411,7 +1499,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 70.45, 66.37, 25.31);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 72.84, 76.61, 10.09);
@@ -1423,7 +1511,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('nose', '99.95 91.72 112.37 113.24 124.8 134.76 99.95 134.76 75.09 134.76 87.52 113.24 99.95 91.72'));
 //# sourceMappingURL=nose.js.map
@@ -1433,7 +1521,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__jaw_top__ = __webpack_require__(311);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__jaw_bottom__ = __webpack_require__(312);
 
@@ -1447,7 +1535,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var toothOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 53.24, 143.29, 10.75, 10.75);
 var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 69.77, 143.29, 10.75, 10.75);
@@ -1465,7 +1553,7 @@ var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var toothOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 53.24, 178.43, 10.75, 10.75);
 var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 69.77, 178.43, 10.75, 10.75);
@@ -1483,7 +1571,7 @@ var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(314);
 
 
@@ -1502,7 +1590,7 @@ var body = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ears__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mouth__ = __webpack_require__(319);
@@ -1528,7 +1616,7 @@ var bandage = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var earLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'ear', mod: 'ear-left' }, 61.37, 110.92, 22.96);
 var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'ear', mod: 'ear-right' }, 203.59, 110.92, 22.96);
@@ -1540,7 +1628,7 @@ var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(318);
 
@@ -1554,7 +1642,7 @@ var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 102.5, 82.46, 8.94);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 102.5, 82.46, 4.41);
@@ -1566,7 +1654,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 161.09, 82.46, 8.94);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 161.09, 82.46, 4.41);
@@ -1578,7 +1666,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var mouthFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('mouth-figure', 'M193.13,182.24,64.24,156.85c.14.64.29,1.27.43,1.91l124.6,32.29Q191.32,186.79,193.13,182.24Z');
 var tooth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '145.34 186.66 134.48 186.66 134.48 170.68 145.34 172.81 145.34 186.66');
@@ -1590,7 +1678,7 @@ var tooth = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(321);
 
 
@@ -1605,7 +1693,7 @@ var body = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ears__ = __webpack_require__(322);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mouth__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(324);
@@ -1627,7 +1715,7 @@ var head = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var earLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'left' }, 71.4, 115.56, 13.66, 18.22);
 var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'right' }, 135.15, 115.56, 13.66, 18.22);
@@ -1639,7 +1727,7 @@ var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var toothLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon({ name: 'tooth', mod: 'left' }, '90.39 244.06 84.3 193.54 96.48 193.54 90.39 244.06');
 var toothRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon({ name: 'tooth', mod: 'right' }, '116.67 244.06 110.58 193.54 122.75 193.54 116.67 244.06');
@@ -1654,7 +1742,7 @@ var blood = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('nose', 99.92, 93.91, 6.03, 87.44));
 //# sourceMappingURL=nose.js.map
@@ -1664,7 +1752,7 @@ var blood = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'left' }, 88.29, 108.56, 6.46);
 var eyeRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'right' }, 118.01, 108.56, 6.46);
@@ -1677,7 +1765,7 @@ var eyebrows = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__legs__ = __webpack_require__(332);
 
@@ -1696,7 +1784,7 @@ var mouth = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /*
 var decor = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('decor', mouth, sting);
 var bodyFigure = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('body-figure', bodyPartOne, bodyPartTwo, bodyPartThree, bodyPartFour, decor);
 var body = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('body', __WEBPACK_IMPORTED_MODULE_2__legs__["a" /* default */], bodyFigure);
-var web = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line({ name: 'web', class: 'decor__web' }, 131.28, 131.28, 131.28, 73.95);
+var web = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line({ name: 'web', class: 'decor__web' }, 131.28, -370.69, 131.28, 73.95);
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('spider', web, body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
 //# sourceMappingURL=spider.js.map
 
@@ -1705,7 +1793,7 @@ var web = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(329);
 
@@ -1719,7 +1807,7 @@ var web = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var toothOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '124.93 145.45 121.69 125.79 128.18 125.79 124.93 145.45');
 var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '138.93 145.45 135.69 125.79 142.18 125.79 138.93 145.45');
@@ -1731,7 +1819,7 @@ var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(331);
 
@@ -1745,7 +1833,7 @@ var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* mak
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 110.35, 104.04, 17.91);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 110.35, 104.04, 9.83);
@@ -1757,7 +1845,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 154.55, 104.04, 17.91);
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 154.55, 104.04, 9.83);
@@ -1769,7 +1857,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var legTopOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polyline({ name: 'leg', mod: 'left' }, '16.65 99.33 51.1 64.87 85.55 99.33');
 var legTopTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polyline({ name: 'leg', mod: 'left' }, '16.65 119.89 51.1 85.44 85.55 119.89');
@@ -1793,7 +1881,7 @@ var legsBottom = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__defs__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eyes__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mouth__ = __webpack_require__(338);
@@ -1810,7 +1898,7 @@ var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var clipPath = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].node({ name: 'clipPath', tagType: 'clipPath', customAttr: { id: 'mouth-clip-path' } });
 var mouthClipPath = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('mouth-clip-path-figure', 122.87, 152.77, 28.28, 61.84);
@@ -1824,7 +1912,7 @@ var defs = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(337);
 
@@ -1838,7 +1926,7 @@ var defs = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M104.3,58.58a7,7,0,1,1-7,7,7,7,0,0,1,7-7m0-7.52a14.51,14.51,0,1,0,14.51,14.51A14.51,14.51,0,0,0,104.3,51.06Z');
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('pupil', 'M104.3,76.32A10.75,10.75,0,1,1,115,65.57,10.76,10.76,0,0,1,104.3,76.32Z');
@@ -1850,7 +1938,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M141.44,58.58a7,7,0,1,1-7,7,7,7,0,0,1,7-7m0-7.52a14.51,14.51,0,1,0,14.51,14.51,14.51,14.51,0,0,0-14.51-14.51Z');
 var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('pupil', 'M141.44,76.32a10.75,10.75,0,1,1,10.75-10.75A10.76,10.76,0,0,1,141.44,76.32Z');
@@ -1862,7 +1950,7 @@ var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
 
 var mouthFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('mouth-figure', 122.87, 152.77, 28.28, 61.84);
 var ubula = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('ubula', 'M154,136.44a12,12,0,1,0-21.21,7.7l.21.29a10.68,10.68,0,0,1,1.52,5.86,12,12,0,0,1-24,0,11.48,11.48,0,0,1,2.06-6.56l.22-.29a12,12,0,1,0-21.76-7s-3.78-10.58-.42-13.94S107.7,89,107.7,89l28-3.89,12.42,32.5,8.39,9.07Z');
@@ -1874,6 +1962,524 @@ var teeth = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /*
 
 /***/ }),
 /* 339 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eyes__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__frame__ = __webpack_require__(343);
+
+
+
+var pillow = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('pillow', 'M32.28,36.89A153.29,153.29,0,0,0,185.65,190.26,153.29,153.29,0,0,0,32.28,36.89Z');
+var mattress = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('mattress', 21.5, 188.5, 566.4, 54.8);
+var blanket = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('blanket', 202.5, 175, 379.41, 120.96);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('bed', pillow, mattress, __WEBPACK_IMPORTED_MODULE_2__frame__["a" /* default */], blanket, __WEBPACK_IMPORTED_MODULE_1__eyes__["a" /* default */]));
+//# sourceMappingURL=bed.js.map
+
+/***/ }),
+/* 340 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(342);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', __WEBPACK_IMPORTED_MODULE_1__eye_left__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__eye_right__["a" /* default */]));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 341 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M82.87,292.38a24.29,24.29,0,0,0,34.36,0A24.29,24.29,0,0,0,82.87,292.38Z');
+var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 100.05, 292.38, 7.27);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'left' }, eyeball, pupil));
+//# sourceMappingURL=eye-left.js.map
+
+/***/ }),
+/* 342 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeball = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('eyeball', 'M124.49,292.38a24.29,24.29,0,0,0,34.36,0A24.29,24.29,0,0,0,124.49,292.38Z');
+var pupil = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 141.67, 292.38, 7.27);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'left' }, eyeball, pupil));
+//# sourceMappingURL=eye-right.js.map
+
+/***/ }),
+/* 343 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var knob = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('knob', 18.28, 18.26, 18.26);
+var verticalBeam = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect({ name: 'beam', mod: 'vertical' }, 5.13, 35.06, 27.39, 280.58);
+var horizontalBeam = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect({ name: 'beam', mod: 'horizontal' }, 21.5, 243.2, 280.58, 27.39);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('frame', knob, verticalBeam, horizontalBeam));
+//# sourceMappingURL=frame.js.map
+
+/***/ }),
+/* 344 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(345);
+
+
+var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('body', -21, 192.5, 194.13, 465.27);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('wolf', body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
+//# sourceMappingURL=wolf.js.map
+
+/***/ }),
+/* 345 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ears__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mouth__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__eyes__ = __webpack_require__(349);
+
+
+
+
+
+var face = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('face', 23.78, 56.1, 125.28, 74.65);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head', __WEBPACK_IMPORTED_MODULE_2__mouth__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__nose__["a" /* default */], face, __WEBPACK_IMPORTED_MODULE_1__ears__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__eyes__["a" /* default */]));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+/* 346 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var earLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon({ name: 'ear', mod: 'left' }, '46.7 0.05 23.78 56.72 69.63 56.72 46.7 0.05');
+var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon({ name: 'ear', mod: 'right' }, '91.45 0.05 68.53 56.72 114.38 56.72 91.45 0.05');
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('ears', earLeft, earRight));
+//# sourceMappingURL=ears.js.map
+
+/***/ }),
+/* 347 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var tongue = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tongue', 24.31, 119.4, 226.72, 55.94, 27.93, 27.97);
+var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('jaw', 23.78, 175.24, 195.57, 20.31);
+var cheek = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('cheek', 23.78, 106.91, 125.28, 74.65);
+var toothOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '205.91 175.57 199.15 119.4 212.68 119.4 205.91 175.57');
+var toothTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '184.59 175.57 177.82 119.4 191.35 119.4 184.59 175.57');
+var toothThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '163.26 175.57 156.49 119.4 170.03 119.4 163.26 175.57');
+var teeth = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('teeth', toothOne, toothTwo, toothThree);
+var salivaOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('saliva', 'M221.84,134.24a2.35,2.35,0,1,1-4.65.12c0-1.47.84-8,2.13-8S221.8,132.77,221.84,134.24Z');
+var salivaTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('saliva', 'M229.73,188.83a2.35,2.35,0,1,1-4.65.12c0-1.47.84-8,2.13-8S229.7,187.36,229.73,188.83Z');
+var salivaThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('saliva', 'M197.77,178.05a2.35,2.35,0,1,1-4.65.12c0-1.47.84-8,2.13-8S197.73,176.58,197.77,178.05Z');
+var salivaFour = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('saliva', 'M176.22,161.17a2.35,2.35,0,1,1-4.65.12c0-1.47.84-8,2.13-8S176.19,159.7,176.22,161.17Z');
+var drooling = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'drooling', class: 'decor__drooling' }, salivaOne, salivaTwo, salivaThree, salivaFour);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('mouth', tongue, jaw, cheek, teeth, drooling));
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+/* 348 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var snout = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('snout', '219.34 119.39 23.78 119.39 23.78 61.81 219.34 96.35 219.34 119.39');
+var noseFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('nose-figure', 218.98, 95.93, 8.93);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('nose', snout, noseFigure));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+/* 349 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eye_left__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eye_right__ = __webpack_require__(351);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', __WEBPACK_IMPORTED_MODULE_1__eye_left__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__eye_right__["a" /* default */]));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 350 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeballPartTop = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'eyeball-part', mod: 'top' }, 'M53.75,82.9a22.69,22.69,0,0,0,32.1,0');
+var eyeballPartBottom = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'eyeball-part', mod: 'bottom' }, 'M85.86,82.9a22.69,22.69,0,0,0-32.1,0');
+var eyeball = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyeball', eyeballPartTop, eyeballPartBottom);
+var pupilPartTop = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'pupil-part', mod: 'top' }, 'M69.8,76.25a9.41,9.41,0,0,0,0,13.31');
+var pupilPartBottom = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'pupil-part', mod: 'bottom' }, 'M69.8,89.56a9.41,9.41,0,0,0,0-13.31');
+var pupil = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('pupil', pupilPartTop, pupilPartBottom);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'left' }, eyeball, pupil));
+//# sourceMappingURL=eye-left.js.map
+
+/***/ }),
+/* 351 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeballPartTop = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'eyeball-part', mod: 'top' }, 'M95,82.9a22.69,22.69,0,0,0,32.1,0');
+var eyeballPartBottom = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'eyeball-part', mod: 'bottom' }, 'M127.11,82.9a22.69,22.69,0,0,0-32.1,0');
+var eyeball = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyeball', eyeballPartTop, eyeballPartBottom);
+var pupilPartTop = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'pupil-part', mod: 'top' }, 'M111.06,76.25a9.41,9.41,0,0,0,0,13.31');
+var pupilPartBottom = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path({ name: 'pupil-part', mod: 'bottom' }, 'M111.06,89.56a9.41,9.41,0,0,0,0-13.31');
+var pupil = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('pupil', pupilPartTop, pupilPartBottom);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'right' }, eyeball, pupil));
+//# sourceMappingURL=eye-right.js.map
+
+/***/ }),
+/* 352 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(353);
+
+
+var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('body', -47.31, 96.49, 336.14, 556.92, 156.32, 156.32);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('yeti', body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
+//# sourceMappingURL=yeti.js.map
+
+/***/ }),
+/* 353 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ears__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mouth__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nose__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__eyes__ = __webpack_require__(357);
+
+
+
+
+
+var hair = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('hair', '133.72 -0.04 139.54 26.87 148.68 0.9 151.07 28.33 163.39 3.71 162.33 31.22 177.64 8.34 173.13 35.5 191.19 14.71 183.32 41.1 203.84 22.74 192.72 47.93 215.39 32.29 201.2 55.89 225.64 43.21 208.61 64.84 234.45 55.33 214.84 74.66 241.66 68.46 219.78 85.18 247.18 82.39 223.38 96.23 250.9 96.9 225.55 107.65 252.78 111.76 226.28 119.25 252.78 126.74 225.55 130.85 250.9 141.6 223.38 142.27 247.18 156.11 219.78 153.32 241.66 170.04 214.84 163.84 234.45 183.17 208.61 173.65 225.64 195.29 201.2 182.61 215.39 206.21 192.72 190.57 203.84 215.76 183.32 197.4 191.19 223.78 173.13 203 177.64 230.16 162.33 207.28 163.39 234.79 151.07 210.17 148.68 237.6 139.54 211.63 133.72 238.54 127.91 211.63 118.77 237.6 116.38 210.17 104.06 234.79 105.12 207.28 89.81 230.16 94.32 203 76.26 223.78 84.13 197.4 63.61 215.76 74.73 190.57 52.06 206.21 66.25 182.61 41.81 195.29 58.84 173.65 33 183.17 52.62 163.84 25.79 170.04 47.67 153.32 20.27 156.11 44.07 142.27 16.55 141.6 41.9 130.85 14.67 126.74 41.17 119.25 14.67 111.76 41.9 107.65 16.55 96.9 44.07 96.23 20.27 82.39 47.67 85.18 25.79 68.46 52.62 74.66 33 55.33 58.84 64.84 41.81 43.21 66.25 55.89 52.06 32.29 74.73 47.93 63.61 22.74 84.13 41.1 76.26 14.71 94.32 35.5 89.81 8.34 105.12 31.22 104.06 3.71 116.38 28.33 118.77 0.9 127.91 26.87 133.72 -0.04');
+var face = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('face', 133.73, 99.05, 70.61, 54.35);
+var faceFigure = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('face-figure', hair, face);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head', faceFigure, __WEBPACK_IMPORTED_MODULE_1__ears__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__mouth__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__eyes__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__nose__["a" /* default */]));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+/* 354 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var earLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'left' }, 68.67, 98.73, 16.3, 12.55);
+var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'right' }, 197.58, 98.73, 16.3, 12.55);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('ears', earLeft, earRight));
+//# sourceMappingURL=ears.js.map
+
+/***/ }),
+/* 355 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var jaw = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('jaw', 75.52, 117.65, 116.41, 64.46);
+var mouthFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('mouth-figure', 82.73, 132.72, 101.97, 43.29);
+var lips = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('lips', 'M182.79,134.64v39.44H84.66V134.64h98.13m3.85-3.85H80.81v47.14H186.64V130.79Z');
+var toothTopOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '161.13 160.77 155.1 134.64 167.16 134.64 161.13 160.77');
+var toothTopTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '142.13 160.77 136.1 134.64 148.16 134.64 142.13 160.77');
+var toothTopThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '123.13 160.77 117.1 134.64 129.16 134.64 123.13 160.77');
+var toothTopFour = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '104.13 160.77 98.1 134.64 110.16 134.64 104.13 160.77');
+var teethTop = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('teeth-top', toothTopOne, toothTopTwo, toothTopThree, toothTopFour);
+var toothBottomOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '94.75 147.96 100.78 174.09 88.72 174.09 94.75 147.96');
+var toothBottomTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '113.75 147.96 119.78 174.09 107.72 174.09 113.75 147.96');
+var toothBottomThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '132.75 147.96 138.78 174.09 126.72 174.09 132.75 147.96');
+var toothBottomFour = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '151.75 147.96 157.78 174.09 145.72 174.09 151.75 147.96');
+var toothBottomFive = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('tooth', '170.75 147.96 176.78 174.09 164.72 174.09 170.75 147.96');
+var teethBottom = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('teeth-bottom', toothBottomOne, toothBottomTwo, toothBottomThree, toothBottomFour, toothBottomFive);
+var teeth = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('tooth', teethTop, teethBottom);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('mouth', jaw, mouthFigure, lips, teeth));
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+/* 356 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('nose', 'M160.8,101.61h-26V113.8h26a6.11,6.11,0,0,0,6.09-6.09h0A6.11,6.11,0,0,0,160.8,101.61Z'));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+/* 357 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'left' }, 114.32, 79.49, 5.77);
+var eyeRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'right' }, 153.13, 79.49, 5.77);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', eyeLeft, eyeRight));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 358 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(359);
+
+
+var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('body', 'M260.9,280.8c0-64.94-53.13-118.07-118.07-118.07h0c-64.94,0-118.07,53.13-118.07,118.07V539.15H260.9Z');
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('zombie', body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
+//# sourceMappingURL=zombie.js.map
+
+/***/ }),
+/* 359 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes__ = __webpack_require__(362);
+
+
+
+
+var hairPartOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('hair-part', '132.33 -0.05 96.08 48.13 87.64 48.13 79.21 48.13 132.33 -0.05');
+var hairPartTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('hair-part', '145.47 -0.05 109.21 48.13 100.78 48.13 92.34 48.13 145.47 -0.05');
+var hairPartThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].polygon('hair-part', '158.6 -0.05 122.35 48.13 113.91 48.13 105.48 48.13 158.6 -0.05');
+var hair = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('hair', hairPartOne, hairPartTwo, hairPartThree);
+var face = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('face', 18.13, 47.84, 168.14, 168.14, 52.98, 52.98);
+var headFigure = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head-figure', hair, face);
+var steamPartRightOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 128.09, 159.01, 162.15, 124.95);
+var steamPartRightTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 130.88, 148.79, 138.31, 156.22);
+var steamPartRightThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 136.14, 143.53, 143.57, 150.96);
+var steamPartRightFour = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 141.4, 138.26, 148.84, 145.69);
+var steamPartRightFive = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 146.67, 133, 154.1, 140.43);
+var steamPartRightSix = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 151.93, 127.74, 159.36, 135.17);
+var steamRight = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'steam', mod: 'right' }, steamPartRightOne, steamPartRightTwo, steamPartRightThree, steamPartRightFour, steamPartRightFive, steamPartRightSix);
+var steamPartLeftOne = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 40.51, 170.93, 74.57, 204.99);
+var steamPartLeftTwo = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 50.73, 173.71, 43.3, 181.14);
+var steamPartLeftThree = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 55.99, 178.98, 48.56, 186.41);
+var steamPartLeftFour = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 61.26, 184.24, 53.84, 191.67);
+var steamPartLeftFive = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 66.52, 189.5, 59.09, 196.94);
+var steamPartLeftSix = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].line('steam-part', 71.79, 194.77, 64.35, 202.2);
+var steamLeft = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'steam', mod: 'left' }, steamPartLeftOne, steamPartLeftTwo, steamPartLeftThree, steamPartLeftFour, steamPartLeftFive, steamPartLeftSix);
+var steams = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'steams', class: 'decor__steams' }, steamRight, steamLeft);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head', headFigure, __WEBPACK_IMPORTED_MODULE_3__eyes__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__nose__["a" /* default */], __WEBPACK_IMPORTED_MODULE_1__mouth__["a" /* default */], steams));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+/* 360 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('mouth', 'M102.43,194c15.36,0,27.81-7.55,27.81-16.86H74.62C74.62,186.43,87.07,194,102.43,194Z'));
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+/* 361 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('nose', 'M19.21,122.49A19.3,19.3,0,0,0,0,141.74H0A19.3,19.3,0,0,0,19.21,161h83.43v-38.5Z'));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+/* 362 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeballLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('eyeball', 66.08, 97.54, 27.81, 16.86);
+var pupilLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 74.18, 97.32, 8.32);
+var eyeLeft = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'left' }, eyeballLeft, pupilLeft);
+var eyeballRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('eyeball', 135.7, 97.54, 27.81, 16.86);
+var pupilRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 142.93, 97.32, 8.32);
+var eyeRight = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'right' }, eyeballRight, pupilRight);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', eyeLeft, eyeRight));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 363 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(364);
+
+
+var body = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('body', 'M150.15,332a75.32,75.32,0,0,0-75.1-75.1h0A75.32,75.32,0,0,0,0,332V761.33h150.2Z');
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('doctor', body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
+//# sourceMappingURL=doctor.js.map
+
+/***/ }),
+/* 364 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ears__ = __webpack_require__(368);
+
+
+
+
+
+var hatFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('hat-figure', 40.23, 0, 70.38, 90.75);
+var crossVertical = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect({ name: 'cross', mod: 'vertical' }, 69.55, 22.99, 11.74, 51.37);
+var crossHorizontal = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect({ name: 'cross', mod: 'horizontal' }, 50, 42.8, 51.37, 11.74);
+var hat = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'hat', class: 'decor__hat' }, hatFigure, crossVertical, crossHorizontal);
+var headFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse('head-figure', 75.42, 173.19, 49.17, 117.42);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head', headFigure, hat, __WEBPACK_IMPORTED_MODULE_4__ears__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__eyes__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__nose__["a" /* default */], __WEBPACK_IMPORTED_MODULE_1__mouth__["a" /* default */]));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+/* 365 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var mouthFigure = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('mouth-figure', 52.67, 225.05, 45.5, 7.34);
+var toothLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 61.64, 231.9, 10.92, 15.17);
+var toothRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 78.28, 231.9, 10.92, 15.17);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('mouth', mouthFigure, toothLeft, toothRight));
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+/* 366 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('nose', 69.96, 161.94, 10.92, 53.82));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+/* 367 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'left' }, 55.81, 143.35, 6.53);
+var eyeRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle({ name: 'eye', mod: 'right' }, 92.44, 137.48, 12.06);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', eyeLeft, eyeRight));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 368 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var earLeft = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'left' }, 25.38, 169.88, 11.3, 26.99);
+var earRight = __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].ellipse({ name: 'ear', mod: 'right' }, 124.87, 169.88, 11.3, 26.99);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('ears', earLeft, earRight));
+//# sourceMappingURL=ears.js.map
+
+/***/ }),
+/* 369 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__head__ = __webpack_require__(370);
+
+
+var ornament = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'ornament', class: 'decor__ornament' }, __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('ornament-part', 31.56, 265.47, 4.89), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('ornament-part', 54.23, 252.58, 4.89), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('ornament-part', 17.78, 291.7, 4.89), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('ornament-part', 94.23, 313.03, 4.89));
+var body = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('body', __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('body-figure', 'M0,526.25V299.52a69.37,69.37,0,0,1,69.17-69.17h44.62V525.5Z'), ornament);
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('yaga', body, __WEBPACK_IMPORTED_MODULE_1__head__["a" /* default */]));
+//# sourceMappingURL=yaga.js.map
+
+/***/ }),
+/* 370 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mouth__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nose__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__eyes__ = __webpack_require__(373);
+
+
+
+
+var shawl = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'shawl', mod: 'decor__shawl' }, __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('shawl-part', 'M96.38.07a196.7,196.7,0,0,1,0,278.33A196.7,196.7,0,0,1,96.38.07Z'), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('shawl-part', 'M26.33,330.41A73.62,73.62,0,0,1,100,256.75,73.62,73.62,0,0,1,26.33,330.41Z'), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('shawl-part', 'M92.76,256.75a73.62,73.62,0,0,1,73.66,73.66A73.62,73.62,0,0,1,92.76,256.75Z'), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('shawl-part', 96.38, 269.15, 26.63));
+var headFigure = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head-figure', shawl, __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('face', 72.11, 38.2, 48.53, 202.49, 24.27, 24.27));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('head', headFigure, __WEBPACK_IMPORTED_MODULE_3__eyes__["a" /* default */], __WEBPACK_IMPORTED_MODULE_2__nose__["a" /* default */], __WEBPACK_IMPORTED_MODULE_1__mouth__["a" /* default */]));
+//# sourceMappingURL=head.js.map
+
+/***/ }),
+/* 371 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('mouth', __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('mouth-figure', 81.54, 185.9, 39.1, 8.83), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 94.68, 185.9, 4.48, 4.48), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].rect('tooth', 102.67, 185.9, 4.48, 4.48)));
+//# sourceMappingURL=mouth.js.map
+
+/***/ }),
+/* 372 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].path('nose', 'M96.62,109a13.69,13.69,0,0,1,12.54,13.6V157H96.62Z'));
+//# sourceMappingURL=nose.js.map
+
+/***/ }),
+/* 373 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__ = __webpack_require__(1);
+
+var eyeLeft = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'left' }, __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 79.94, 81, 11.98), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 79.94, 81, 6.14));
+var eyeRight = Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])({ name: 'eye', mod: 'right' }, __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('eyeball', 112.78, 81, 15.2), __WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["c" /* make */].circle('pupil', 112.78, 81, 7.79));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0__svg_constructor_library__["b" /* group */])('eyes', eyeLeft, eyeRight));
+//# sourceMappingURL=eyes.js.map
+
+/***/ }),
+/* 374 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1922,7 +2528,7 @@ var MyApp = (function () {
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
-/* 340 */
+/* 375 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2061,7 +2667,7 @@ var endGame = function () {
 //# sourceMappingURL=game.browser.js.map
 
 /***/ }),
-/* 341 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2081,7 +2687,7 @@ var endGame = function () {
 //# sourceMappingURL=select-char.browser.js.map
 
 /***/ }),
-/* 342 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2098,7 +2704,7 @@ var BackgroundTabletComponent = (function () {
     }
     BackgroundTabletComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'background-tablet',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-tablet.component.html"*/'<svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">\n    <!-- 0 0 274.02 335.2 -->\n      <rect x="85.42" y="75.81" width="131.4" height="258.09" />\n      <rect x="50.76" y="75.13" width="174.7" height="168.77" />\n      <rect class="cls-1" x="73.82" y="175.48" width="77.09" height="57.09" />\n      <rect class="cls-1" x="140.82" y="243.18" width="56.05" height="79.04" />\n      <polygon points="163 25.67 187.61 46.37 212.22 67.07 163 67.07 113.78 67.07 138.39 46.37 163 25.67" />\n      <polygon points="26.8 234.79 40.21 258.01 53.61 281.22 26.8 281.22 0 281.22 13.4 258.01 26.8 234.79" />\n      <polygon points="26.8 261.8 40.21 285.01 53.61 308.23 26.8 308.23 0 308.23 13.4 285.01 26.8 261.8" />\n      <polygon points="26.8 288.81 40.21 312.02 53.61 335.23 26.8 335.23 0 335.23 13.4 312.02 26.8 288.81" />\n      <ellipse cx="73.82" cy="27.19" rx="59.58" ry="15.53" />\n      <ellipse cx="73.82" cy="26.68" rx="32.87" ry="26.68" />\n      <circle class="cls-1" cx="36.49" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="51.42" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="66.36" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="96.23" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="111.16" cy="26.27" r="3.95" />\n      <rect x="132.5" y="65.79" width="116.11" height="12" />\n      <rect x="37.94" y="162.89" width="70" height="12" />\n      <rect x="186.61" y="213.5" width="70" height="12" />\n      <rect x="214.52" y="225.5" width="52.09" height="12" />\n      <rect x="206.61" y="237.5" width="67.41" height="12" />\n      <rect x="256.78" y="249.5" width="17.23" height="12" />\n      <rect x="269.77" y="261.5" width="4.24" height="12" />\n      <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />\n      <g>\n        <rect id="anchor-1" class="alien" x="71.83" y="8.181" width="0.001" height="1"></rect>\n        <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.001" height="1"></rect>\n        <rect id="anchor-3" class="ghost" x="116.67" y="43.56" width="0.001" height="1"></rect>\n        <rect id="anchor-4" class="mummy" x="23.32" y="87.65" width="0.001" height="1"></rect>\n        <rect id="anchor-5" class="spider" x="240.048" y="112.218" width="0.001" height="1"></rect>\n        <rect id="anchor-6" class="skeleton" x="153.74" y="134.574" width="0.001" height="1"></rect>\n        <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.001" height="1"></rect>\n        <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.001" height="1"></rect>\n        <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.001" height="1"></rect>\n        <rect id="anchor-10" class="yetti" x="100.726" y="269.867" width="0.001" height="1"></rect>\n        <rect id="anchor-11" class="dracula" x="168.399" y="255.942" width="0.001" height="1"></rect>\n        <rect id="anchor-12" class="zombie" x="218.407" y="261.786" width="0.001" height="1"></rect>\n      </g>\n  </svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-tablet.component.html"*/,
+            selector: 'background-tablet',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-tablet.component.html"*/'<svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="6.5 -14.25 267.5 347.5">\n    <!-- 0 0 274.02 335.2 -->\n      <rect x="85.42" y="75.81" width="131.4" height="258.09" />\n      <rect x="50.76" y="75.13" width="174.7" height="168.77" />\n      <rect class="cls-1" x="73.82" y="175.48" width="77.09" height="57.09" />\n      <rect class="cls-1" x="140.82" y="243.18" width="56.05" height="79.04" />\n      <polygon points="163 25.67 187.61 46.37 212.22 67.07 163 67.07 113.78 67.07 138.39 46.37 163 25.67" />\n      <polygon points="26.8 234.79 40.21 258.01 53.61 281.22 26.8 281.22 0 281.22 13.4 258.01 26.8 234.79" />\n      <polygon points="26.8 261.8 40.21 285.01 53.61 308.23 26.8 308.23 0 308.23 13.4 285.01 26.8 261.8" />\n      <polygon points="26.8 288.81 40.21 312.02 53.61 335.23 26.8 335.23 0 335.23 13.4 312.02 26.8 288.81" />\n      <ellipse cx="73.82" cy="27.19" rx="59.58" ry="15.53" />\n      <ellipse cx="73.82" cy="26.68" rx="32.87" ry="26.68" />\n      <circle class="cls-1" cx="36.49" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="51.42" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="66.36" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="96.23" cy="26.27" r="3.95" />\n      <circle class="cls-1" cx="111.16" cy="26.27" r="3.95" />\n      <rect x="132.5" y="65.79" width="116.11" height="12" />\n      <rect x="37.94" y="162.89" width="70" height="12" />\n      <rect x="186.61" y="213.5" width="70" height="12" />\n      <rect x="214.52" y="225.5" width="52.09" height="12" />\n      <rect x="206.61" y="237.5" width="67.41" height="12" />\n      <rect x="256.78" y="249.5" width="17.23" height="12" />\n      <rect x="269.77" y="261.5" width="4.24" height="12" />\n      <rect class="cls-1" x="150.9" y="87.05" width="56.83" height="78.24" />\n      <g>\n        <rect id="anchor-1" class="alien" x="71.83" y="0" width="0.001" height="1"></rect>\n        <rect id="anchor-2" class="yaga" x="195.491" y="-25.384" width="0.001" height="1"></rect>\n        <rect id="anchor-3" class="ghost" x="110.237" y="30.116" width="0.001" height="1"></rect>\n        <rect id="anchor-4" class="mummy" x="24.82" y="86.707" width="0.001" height="1"></rect>\n        <rect id="anchor-5" class="spider" x="234.048" y="59.216" width="0.001" height="1"></rect>\n        <rect id="anchor-6" class="skeleton" x="153.74" y="127.33" width="0.001" height="1"></rect>\n        <rect id="anchor-7" class="doctor" x="219.4" y="130.811" width="0.001" height="1"></rect>\n        <rect id="anchor-8" class="bed" x="82.255" y="179.489" width="0.001" height="1"></rect>\n        <rect id="anchor-9" class="wolf" x="8.137" y="282.876" width="0.001" height="1"></rect>\n        <rect id="anchor-10" class="yeti" x="94.566" y="256.423" width="0.001" height="1"></rect>\n        <rect id="anchor-11" class="dracula" x="162.25" y="242.469" width="0.001" height="1"></rect>\n        <rect id="anchor-12" class="zombie" x="213.094" y="248.342" width="0.001" height="1"></rect>\n      </g>\n  </svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-tablet.component.html"*/,
         })
     ], BackgroundTabletComponent);
     return BackgroundTabletComponent;
@@ -2107,7 +2713,7 @@ var BackgroundTabletComponent = (function () {
 //# sourceMappingURL=background-tablet.component.js.map
 
 /***/ }),
-/* 343 */
+/* 378 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2124,7 +2730,7 @@ var BackgroundTabletComponent = (function () {
     }
     BackgroundTabletComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'background-mobile',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-mobile.component.html"*/'<svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="4.15 0 163.06 289.77">\n  <rect class="cls-1" x="4.07" width="163.06" height="289.77" />\n  <rect x="52.28" y="74.52" width="80.03" height="216.05" />\n  <rect x="31.16" y="74.1" width="106.4" height="109.69" />\n  <rect class="cls-1" x="39.2" y="141.22" width="46.95" height="34.77" />\n  <rect class="cls-1" x="90.12" y="188.21" width="25.59" height="48.14" />\n  <polygon points="99.52 43.98 114.51 56.59 129.5 69.2 99.52 69.2 69.55 69.2 84.53 56.59 99.52 43.98" />\n  <polygon points="19.78 216.21 29.67 233.34 39.55 250.47 19.78 250.47 0 250.47 9.89 233.34 19.78 216.21" />\n  <polygon points="19.78 236.14 29.67 253.27 39.55 270.39 19.78 270.39 0 270.39 9.89 253.27 19.78 236.14" />\n  <polygon points="19.78 256.07 29.67 273.19 39.55 290.32 19.78 290.32 0 290.32 9.89 273.19 19.78 256.07" />\n  <ellipse cx="55.48" cy="26.47" rx="43.55" ry="11.35" />\n  <ellipse cx="55.48" cy="26.1" rx="24.02" ry="19.5" />\n  <circle class="cls-1" cx="28.19" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="39.1" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="50.02" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="60.69" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="71.85" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="82.76" cy="25.8" r="2.89" />\n  <rect x="80.95" y="68.42" width="70.71" height="7.31" />\n  <rect x="23.36" y="127.55" width="42.63" height="7.31" />\n  <rect x="110.4" y="162.38" width="42.63" height="7.31" />\n  <rect x="127.4" y="169.69" width="31.72" height="7.31" />\n  <rect x="122.58" y="177" width="42.63" height="7.31" />\n  <rect x="153.14" y="184.3" width="18.16" height="7.31" />\n  <rect x="161.05" y="191.61" width="6.88" height="7.31" />\n  <rect class="cls-1" x="92.16" y="81.37" width="34.61" height="47.65" />\n  <g>\n    <rect id="anchor-1" class="alien" x="43.937" y="22.193" width="0.01" height="1"></rect>\n    <rect id="anchor-2" class="yaga" x="210.6" y="-11.565" width="0.01" height="1"></rect>\n    <rect id="anchor-3" class="ghost" x="59.11" y="50.17" width="0.01" height="1"></rect>\n    <rect id="anchor-4" class="mummy" x="15.31" y="75.16" width="0.01" height="1"></rect>\n    <rect id="anchor-5" class="spider" x="142.74" y="58.42" width="0.01" height="1"></rect>\n    <rect id="anchor-6" class="skeleton" x="90.823" y="99.902" width="0.01" height="1"></rect>\n    <rect id="anchor-7" class="doctor" x="225.376" y="144.255" width="0.01" height="1"></rect>\n    <rect id="anchor-8" class="bed" x="87.708" y="192.933" width="0.01" height="1"></rect>\n    <rect id="anchor-9" class="wolf" x="14.137" y="296.32" width="0.01" height="1"></rect>\n    <rect id="anchor-10" class="yetti" x="100.726" y="269.867" width="0.01" height="1"></rect>\n    <rect id="anchor-11" class="dracula" x="93.66" y="182.61" width="0.01" height="1"></rect>\n    <rect id="anchor-12" class="zombie" x="218.407" y="261.786" width="0.01" height="1"></rect>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-mobile.component.html"*/,
+            selector: 'background-mobile',template:/*ion-inline-start:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-mobile.component.html"*/'<svg class="bg__content" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="4.15 0 163.06 289.77">\n  <rect class="cls-1" x="4.07" width="163.06" height="289.77" />\n  <rect x="52.28" y="74.52" width="80.03" height="216.05" />\n  <rect x="31.16" y="74.1" width="106.4" height="109.69" />\n  <rect class="cls-1" x="39.2" y="141.22" width="46.95" height="34.77" />\n  <rect class="cls-1" x="90.12" y="188.21" width="25.59" height="48.14" />\n  <polygon points="99.52 43.98 114.51 56.59 129.5 69.2 99.52 69.2 69.55 69.2 84.53 56.59 99.52 43.98" />\n  <polygon points="19.78 216.21 29.67 233.34 39.55 250.47 19.78 250.47 0 250.47 9.89 233.34 19.78 216.21" />\n  <polygon points="19.78 236.14 29.67 253.27 39.55 270.39 19.78 270.39 0 270.39 9.89 253.27 19.78 236.14" />\n  <polygon points="19.78 256.07 29.67 273.19 39.55 290.32 19.78 290.32 0 290.32 9.89 273.19 19.78 256.07" />\n  <ellipse cx="55.48" cy="26.47" rx="43.55" ry="11.35" />\n  <ellipse cx="55.48" cy="26.1" rx="24.02" ry="19.5" />\n  <circle class="cls-1" cx="28.19" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="39.1" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="50.02" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="60.69" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="71.85" cy="25.8" r="2.89" />\n  <circle class="cls-1" cx="82.76" cy="25.8" r="2.89" />\n  <rect x="80.95" y="68.42" width="70.71" height="7.31" />\n  <rect x="23.36" y="127.55" width="42.63" height="7.31" />\n  <rect x="110.4" y="162.38" width="42.63" height="7.31" />\n  <rect x="127.4" y="169.69" width="31.72" height="7.31" />\n  <rect x="122.58" y="177" width="42.63" height="7.31" />\n  <rect x="153.14" y="184.3" width="18.16" height="7.31" />\n  <rect x="161.05" y="191.61" width="6.88" height="7.31" />\n  <rect class="cls-1" x="92.16" y="81.37" width="34.61" height="47.65" />\n  <g>\n    <rect id="anchor-1" class="alien" x="43.937" y="22.193" width="0.01" height="1"></rect>\n    <rect id="anchor-2" class="yaga" x="114.661" y="-2.828" width="0.01" height="1"></rect>\n    <rect id="anchor-3" class="ghost" x="59.11" y="50.17" width="0.01" height="1"></rect>\n    <rect id="anchor-4" class="mummy" x="15.31" y="75.16" width="0.01" height="1"></rect>\n    <rect id="anchor-5" class="spider" x="142.74" y="58.42" width="0.01" height="1"></rect>\n    <rect id="anchor-6" class="skeleton" x="90.823" y="99.902" width="0.01" height="1"></rect>\n    <rect id="anchor-7" class="doctor" x="133.814" y="106.024" width="0.001" height="1"></rect>\n    <rect id="anchor-8" class="bed" x="44.16" y="137.673" width="0.001" height="1"></rect>\n    <rect id="anchor-9" class="wolf" x="5.69" y="253.105" width="0.001" height="1"></rect>\n    <rect id="anchor-10" class="yeti" x="69.567" y="236.835" width="0.001" height="1"></rect>\n    <rect id="anchor-11" class="dracula" x="93.66" y="181.61" width="0.001" height="1"></rect>\n    <rect id="anchor-12" class="zombie" x="129.554" y="232.395" width="0.001" height="1"></rect>\n  </g>\n</svg>\n'/*ion-inline-end:"/home/ned4ded/dev/monsters/src/pages/select-char/background/background-mobile.component.html"*/,
         })
     ], BackgroundTabletComponent);
     return BackgroundTabletComponent;

@@ -1,0 +1,36 @@
+.bed {
+  bottom: 5%;
+  right: 0;
+
+  &__screen {
+    background-color: #003d4e;
+  }
+
+  & .pillow {
+    fill: #fff;
+  }
+
+  & .mattress {
+    fill: #fff;
+  }
+
+  & .eyeball {
+    fill: #fff;
+  }
+
+  & .pupil {
+    fill: #f24943;
+  }
+
+  & .beam {
+    fill: #9a9b9b;
+  }
+
+  & .knob {
+    fill: #9a9b9b;
+  }
+
+  & .blanket {
+    fill: #00bcc5;
+  }
+}

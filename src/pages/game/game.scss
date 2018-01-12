@@ -20,179 +20,18 @@ game-page {
     z-index: 10;
   }
 
-  .alien {
-    &__screen {
-      background-color: black;
-    }
-
-    & .head--figure {
-      fill: #6fc055;
-    }
-
-    & .mouth {
-      fill: #f24943,
-    }
-
-    & .iris {
-      fill: #586ab1,
-    }
-
-    & .body--figure {
-      fill: #6fc055;
-    }
-  }
-
-  .skeleton {
-    &__screen {
-      background-color: black;
-    }
-
-    & .head--figure {
-      fill: #fff;
-    }
-
-    & .jaw {
-      fill: #fff;
-    }
-
-    & .tooth {
-      fill: #000;
-    }
-
-    & .rib {
-      fill: #fff;
-    }
-
-    & .pupil {
-      fill: #f24942;
-    }
-  }
-
-  .mummy {
-    &__screen {
-      background-color: #3f2721;
-    }
-
-    & .head--figure {
-      fill: #fff;
-    }
-
-    & .ear {
-      fill: #b48d69;
-    }
-
-    & .head-part {
-      fill: #ffd7a5;
-
-      &--dark {
-        fill: #e1b285;
-      }
-
-      &--empty {
-        fill: #000;
-      }
-    }
-
-    & .body-part {
-      fill: #ffd7a5;
-
-      &--dark {
-        fill: #e1b285;
-      }
-    }
-
-    & .tooth {
-      fill: #fff;
-    }
-
-    & .eyeball {
-      fill: #f24943;
-    }
-
-    & .decor {
-      &__bandage {
-        fill: #e1b285;
-      }
-    }
-  }
-
-  .ghost {
-    &__screen {
-      background-color: #000;
-    }
-
-    & .body {
-      fill: #b7e3ee;
-    }
-
-    & .eyeball {
-      fill: #fff;
-    }
-
-    & .ubula {
-      fill: #f24943;
-    }
-
-    & .tooth {
-      fill: #fff;
-    }
-
-    & .mouth {
-      clip-path: url(#mouth-clip-path);
-    }
-  }
-
-  .spider {
-    &__screen {
-      background-color: #f1ea35;
-    }
-
-    & .eyeball {
-      fill: #058d5a;
-    }
-
-    & .body-part--colored {
-      fill: #058d5a;
-    }
-
-    & .tooth {
-      fill: #fff;
-    }
-  }
-
-  .dracula {
-    &__screen {
-      background-color: #3b457e;
-    }
-
-    & .face {
-      fill: #cf6cac;
-    }
-
-    & .ear {
-      fill: #cf6cac;
-    }
-
-    & .nose {
-      fill: #9a5790;
-    }
-
-    & .nose {
-      fill: #9a5790;
-    }
-
-    & .tooth {
-      fill: #fff;
-    }
-
-    & .mouth-figure {
-      fill: #8a4242;
-    }
-
-    & .blood {
-      fill: #f24943;
-    }
-  }
+  @import './monsters-styles/alien.scss';
+  @import './monsters-styles/yaga.scss';
+  @import './monsters-styles/skeleton.scss';
+  @import './monsters-styles/mummy.scss';
+  @import './monsters-styles/spider.scss';
+  @import './monsters-styles/ghost.scss';
+  @import './monsters-styles/doctor.scss';
+  @import './monsters-styles/bed.scss';
+  @import './monsters-styles/wolf.scss';
+  @import './monsters-styles/yeti.scss';
+  @import './monsters-styles/dracula.scss';
+  @import './monsters-styles/zombie.scss';
 
   .container {
     position: fixed;
@@ -288,6 +127,11 @@ game-page {
     &__item{
       flex-shrink: 0;
       margin: 0 10px;
+
+      &--fraud {
+        width: 10px;
+        height: 100%;
+      }
     }
 
     &__doubled + .panel__doubled {

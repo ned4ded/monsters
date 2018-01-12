@@ -29,6 +29,6 @@ const bodyFigure = group('body-figure', bodyPartOne, bodyPartTwo, bodyPartThree,
 
 const body = group('body', legs, bodyFigure);
 
-const web = make.line({name: 'web', class: 'decor__web'}, 131.28, 131.28, 131.28, 73.95);
+const web = make.line({name: 'web', class: 'decor__web'}, 131.28, -370.69, 131.28, 73.95);
 
 export default group('spider', web, body, head);
